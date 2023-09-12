@@ -1,12 +1,15 @@
-import { Hero, Services, About, Experience } from './components'
+import { Hero, Services, About, Experience, Data, Testimonials, Signup } from './components'
 
 export default function Home() {
   return (
-    <main className="min-h-screen mx-auto max-w-screen-xl py-16 lg:py-24 px-10">
+    <main className="min-h-screen">
       <Hero />
       <Services />
       <About />
       <Experience />
+      <Data />
+      <Testimonials />
+      <Signup />
     </main>
   )
 }

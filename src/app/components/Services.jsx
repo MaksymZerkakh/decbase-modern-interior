@@ -7,6 +7,7 @@ import 'slick-carousel/slick/slick-theme.css';
 import { sliderContent } from '../constants';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronCircleLeft, faChevronCircleRight } from '@fortawesome/free-solid-svg-icons';
+import { WrapperContainer } from '../components';
 
 
 const Services = () => {
@@ -46,9 +47,10 @@ const Services = () => {
 
     return (
         <section className="py-20">
+            <WrapperContainer>
             <div className="pb-5">
                 <div className="text-sm uppercase">What We Do</div>
-                <h1 className="text-5xl md:text-8xl pt-3 pb-10 font-normal">Our Services</h1>
+                <h2 className="text-5xl md:text-8xl pt-3 pb-10 font-normal">Our Services</h2>
             </div>
 
             <div className="flex justify-end pr-5 slider-con">
@@ -68,6 +70,7 @@ const Services = () => {
                     </div>
                 ))}
             </Slider>
+            </WrapperContainer>
         </section>
     )
 }

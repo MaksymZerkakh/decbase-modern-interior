@@ -473,6 +473,10 @@ p {
 	color: #646464;
 }
 
+.background-color {
+	background-color: #F8F8F8;
+}
+
 hr {
 	background-color: #ccc;
 	border: 0;
