@@ -1,0 +1,13 @@
+.footer-con {
+    background-color: #1b2430;
+    padding: 20px 40px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+
+    .site-info {
+        display: flex;
+        justify-content: center;
+        color: $color__white;
+    }
+}
