@@ -1,8 +1,12 @@
 import React from 'react'
+import { WrapperContainer, RowContainer } from '../components';
 
 const Testimonials = () => {
   return (
-    <div>Testimonials</div>
+    <section className="py-20">
+      <WrapperContainer>
+      </WrapperContainer>
+    </section>
   )
 }
 
