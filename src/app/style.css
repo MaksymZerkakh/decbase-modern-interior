@@ -640,9 +640,12 @@ textarea {
 --------------------------------------------------------------*/
 /* Navigation
 --------------------------------------------- */
+header {
+	background-color: #fff;
+}
+
 header #navbar {
 	display: flex;
-	z-index: 101;
 	font-family: "Oswald", sans-serif;
 	color: #212121;
 }
@@ -669,7 +672,7 @@ header #navbar ul {
 		flex-direction: column;
 		align-items: flex-start;
 		justify-content: flex-start;
-		top: 80px;
+		top: 79px;
 		background-color: #fff;
 		width: 300px;
 		height: 100vh;
@@ -701,6 +704,7 @@ header #mobile {
 header #mobile .svg-inline--fa {
 	font-size: 24px;
 	cursor: pointer;
+	width: 25px;
 }
 
 @media screen and (max-width: 768px) {
@@ -876,6 +880,24 @@ footer .social li a::before {
 
 .gallery-caption {
 	display: block;
+}
+
+.slider {
+	box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.14);
+	border-radius: 60px 0px;
+	background-color: #fff;
+	border-radius: 60px 0;
+	margin: 10px;
+}
+
+.slider-con {
+	font-size: 24px;
+	cursor: pointer;
+}
+
+.slider-con svg {
+	border-radius: 99px;
+	color: #CAA892;
 }
 
 /*--------------------------------------------------------------

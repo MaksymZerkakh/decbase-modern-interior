@@ -3,7 +3,7 @@ import { useState } from 'react';
 import Image from 'next/image'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
-import CustomButton from './CustomButton'
+import { CustomButton } from '../components';
 import { navLinks } from '../constants'
 
 const Header = () => {

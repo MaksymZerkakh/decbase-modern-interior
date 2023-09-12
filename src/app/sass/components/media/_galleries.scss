@@ -21,3 +21,21 @@
 .gallery-caption {
 	display: block;
 }
+
+.slider {
+	box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.14);
+	border-radius: 60px 0px;
+	background-color: $color__white;
+    border-radius: 60px 0;
+    margin: 10px;
+}
+
+.slider-con {
+	font-size: 24px;
+	cursor: pointer;
+
+	svg {
+		border-radius: 99px;
+		color: #CAA892;
+	}
+}
