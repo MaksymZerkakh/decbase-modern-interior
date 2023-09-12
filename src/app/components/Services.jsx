@@ -60,16 +60,18 @@ const Services = () => {
                 <div onClick={handleNext}><FontAwesomeIcon icon={ faChevronCircleRight } /></div>
             </div>
 
+                
             <Slider ref={sliderRef} {...settings}>
                 {sliderContent.map((slide, index) => (
-                    <div className="px-1">
-                        <div key={index} className="slider px-8 py-10">
+                    <div key={index} className="px-1">
+                        <div className="slider px-8 py-10">
                             <h2 className="pb-3 text-lg font-semibold">{slide.title}</h2>
                             <p>{slide.description}</p>
                         </div>
                     </div>
                 ))}
             </Slider>
+         
             </WrapperContainer>
         </section>
     )
