@@ -71,3 +71,22 @@ export const sliderContent = [
         description: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes.",
     },
 ];
+
+export const expertiseContent = [
+    {
+        title: "Projects",
+        number: "980",
+    },
+    {
+        title: "Happy Clients",
+        number: "520",
+    },
+    {
+        title: "Winners",
+        number: "330",
+    },
+    {
+        title: "Recognitions",
+        number: "120",
+    },
+]
