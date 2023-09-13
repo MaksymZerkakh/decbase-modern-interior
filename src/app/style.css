@@ -512,13 +512,14 @@ button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-	border: 1px solid;
 	border-color: #ccc #ccc #bbb;
 	border-radius: 3px;
 	background: #e6e6e6;
-	color: rgba(0, 0, 0, 0.8);
 	line-height: 1;
-	padding: 7px 19px;
+	padding: 10px 20px;
+	color: #fff;
+	border: none;
+	font-family: "Oswald", sans-serif;
 }
 
 button:hover,
@@ -578,14 +579,6 @@ input[type="submit"]:focus {
 	transform: translate(-50%, -50%) scale(1);
 }
 
-.custom-button {
-	border-radius: 15px 0;
-	background-color: #CAA892;
-	color: #fff;
-	border: none;
-	font-family: "Oswald", sans-serif;
-}
-
 input[type="text"],
 input[type="email"],
 input[type="url"],
@@ -602,7 +595,7 @@ input[type="datetime"],
 input[type="datetime-local"],
 input[type="color"],
 textarea {
-	border-radius: 20px 0px 0px 0px;
+	border-radius: 15px 0px 0px 0px;
 	background: #EEE;
 	padding: 5px 20px;
 	border: none;

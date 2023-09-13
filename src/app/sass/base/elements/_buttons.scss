@@ -2,13 +2,15 @@ button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-	border: 1px solid;
 	border-color: $color__border-button;
 	border-radius: 3px;
 	background: $color__background-button;
-	color: rgba(0, 0, 0, 0.8);
 	line-height: 1;
-	padding: 7px 19px;
+	padding: 10px 20px;
+	color: $color__white;
+	border: none;
+	font-family: $font__header;
+	
 
 	&:hover {
 		border-color: $color__border-button-hover;
@@ -57,12 +59,4 @@ input[type="submit"] {
   }
   .custom-cursor--link {
 	transform: translate(-50%, -50%) scale(1);
-  }
-
-  .custom-button {
-	border-radius: 15px 0;
-	background-color: #CAA892;
-	color: $color__white;
-	border: none;
-	font-family: $font__header;
   }
