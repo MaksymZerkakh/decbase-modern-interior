@@ -21,7 +21,7 @@ const About = () => {
 
             <div className="lg:w-2/4 md:pr-10">
                 <div className="text-sm uppercase">About Us</div>
-                <h2 className="text-5xl md:text-8xl pt-3 pb-10 font-normal">Interioris The Will of An Epoch Mextreo</h2>
+                <h2 className="text-5xl md:text-8xl pt-3 pb-10 font-light">Interioris The Will of An Epoch Mextreo</h2>
                 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. </p>
                 <div className="pt-10"><CustomButton>Learn More</CustomButton></div>
             </div>

@@ -1,6 +1,7 @@
 import './style.css'
 import { Inter } from 'next/font/google'
 import { Header, Footer } from './components'
+import 'typeface-oswald';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -12,6 +13,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet" />
+      </head>
+
       <body className={inter.className}>
         <Header />
         {children}
@@ -20,3 +25,4 @@ export default function RootLayout({ children }) {
     </html>
   )
 }
+

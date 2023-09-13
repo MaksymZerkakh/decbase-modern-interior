@@ -50,7 +50,7 @@ const Services = () => {
             <WrapperContainer>
             <div className="pb-5">
                 <div className="text-sm uppercase">What We Do</div>
-                <h2 className="text-5xl md:text-8xl pt-3 pb-10 font-normal">Our Services</h2>
+                <h2 className="text-5xl md:text-8xl pt-3 pb-10 font-light">Our Services</h2>
             </div>
 
             <div className="flex justify-end pr-5 slider-con">

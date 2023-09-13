@@ -15,7 +15,7 @@ const Experience = () => {
                     height={300}
                     priority
                 />
-                <h2 className="text-5xl md:text-8xl pt-3 pb-10 font-normal">Create Your Interior Design</h2>
+                <h2 className="text-5xl md:text-8xl pt-3 pb-10 font-light">Create Your Interior Design</h2>
                 <div className="pt-5"><CustomButton>Contact Us</CustomButton></div>
             </div>
 
