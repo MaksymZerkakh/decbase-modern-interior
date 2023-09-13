@@ -539,6 +539,13 @@ input[type="submit"]:focus {
 	border-color: #aaa #bbb #bbb;
 }
 
+button:focus-visible,
+input[type="button"]:focus-visible,
+input[type="reset"]:focus-visible,
+input[type="submit"]:focus-visible {
+	border-color: red;
+}
+
 .back-to-top {
 	font-family: "Oswald", sans-serif;
 }
@@ -893,7 +900,7 @@ footer .social li a::before {
 
 .slider-con svg {
 	border-radius: 99px;
-	color: #CAA892;
+	color: #358070;
 }
 
 .data-cards {

@@ -20,6 +20,10 @@ input[type="submit"] {
 	&:focus {
 		border-color: $color__border-button-focus;
 	}
+
+	&:focus-visible {
+		border-color: red;
+	}
 }
 
 .back-to-top {

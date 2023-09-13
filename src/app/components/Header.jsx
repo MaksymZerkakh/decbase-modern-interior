@@ -45,7 +45,7 @@ const Header = () => {
 
           <div className="flex md:hidden">
               <div className="pr-5"><CustomButton><a href="/">Sign Up</a></CustomButton></div>
-              <div id="mobile" onClick={handleClick}>
+              <div id="mobile" onClick={handleClick} className="py-1">
                 <FontAwesomeIcon icon={isClicked ? faTimes : faBars} />
               </div>
           </div>

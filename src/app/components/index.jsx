@@ -11,6 +11,7 @@ import Signup from "./Signup";
 import WrapperContainer from "./WrapperContainer";
 import RowContainer from "./RowContainer";
 import Blog from "./Blog";
+import BackToTopButton from "./BackToTopButton";
 
 export { 
     Header, 
@@ -25,5 +26,6 @@ export {
     Signup, 
     WrapperContainer, 
     RowContainer,
-    Blog 
+    Blog, 
+    BackToTopButton 
 };

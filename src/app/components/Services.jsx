@@ -46,14 +46,14 @@ const Services = () => {
     };
 
     return (
-        <section className="py-20">
+        <section className="pt-10 pb-20">
             <WrapperContainer>
             <div className="pb-5">
                 <div className="text-sm uppercase">What We Do</div>
-                <h2 className="text-5xl md:text-8xl pt-3 pb-10 font-light">Our Services</h2>
+                <h2 className="text-5xl md:text-6xl pt-3 font-light">Our Services</h2>
             </div>
 
-            <div className="flex justify-end pr-5 slider-con">
+            <div className="flex justify-end pr-5 slider-con pb-5">
                 <div className="mr-2" onClick={handlePrevious}>
                 <FontAwesomeIcon icon={ faChevronCircleLeft } />
                 </div>

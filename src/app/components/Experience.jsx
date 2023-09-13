@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 const Experience = () => {
   return (
-    <section className="py-20">
+    <section className="pt-10 pb-20">
         <WrapperContainer>
             <RowContainer>
             <div className="lg:w-2/4 order-2 lg:order-1 md:pr-10 lg:py-20">
@@ -15,7 +15,7 @@ const Experience = () => {
                     height={300}
                     priority
                 />
-                <h2 className="text-5xl md:text-8xl pt-3 pb-10 font-light">Create Your Interior Design</h2>
+                <h2 className="text-5xl md:text-6xl pt-3 pb-10 font-light">Years Of Successfuly Working The Market</h2>
                 <div className="pt-5"><CustomButton style={{backgroundColor: '#37806B'}}>Contact Us</CustomButton></div>
             </div>
 

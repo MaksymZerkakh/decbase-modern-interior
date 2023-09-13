@@ -49,8 +49,10 @@ const Testimonials = () => {
   return (
     <section className="py-20">
       <WrapperContainer>
-        <div className="text-sm uppercase text-center pb-3">Testimonials</div>
-        <h2 className="text-center text-4xl font-light">See Whay Our Cliebt Say About Us</h2>
+        <div className="pb-5">
+          <div className="text-sm uppercase text-center pb-3">Testimonials</div>
+          <h2 className="text-center text-5xl lg:text-6xl font-light">See Whay Our Clients Say About Us</h2>
+        </div>
 
         <div className="flex justify-end pr-5 slider-con pb-5">
                 <div className="mr-2" onClick={handlePrevious}>
