@@ -602,10 +602,10 @@ input[type="datetime"],
 input[type="datetime-local"],
 input[type="color"],
 textarea {
-	color: #666;
-	border: 1px solid #ccc;
-	border-radius: 3px;
-	padding: 3px;
+	border-radius: 20px 0px 0px 0px;
+	background: #EEE;
+	padding: 5px 20px;
+	border: none;
 }
 
 input[type="text"]:focus,
@@ -910,6 +910,10 @@ footer .social li a::before {
 	border-radius: 60px 0;
 	width: 185px;
 	height: 185px;
+}
+
+.quote {
+	color: #CAA892;
 }
 
 /*--------------------------------------------------------------

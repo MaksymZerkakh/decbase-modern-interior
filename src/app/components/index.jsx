@@ -10,6 +10,7 @@ import Testimonials from "./Testimonials";
 import Signup from "./Signup";
 import WrapperContainer from "./WrapperContainer";
 import RowContainer from "./RowContainer";
+import Blog from "./Blog";
 
 export { 
     Header, 
@@ -23,5 +24,6 @@ export {
     Testimonials, 
     Signup, 
     WrapperContainer, 
-    RowContainer 
+    RowContainer,
+    Blog 
 };
