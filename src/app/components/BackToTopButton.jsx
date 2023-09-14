@@ -30,6 +30,7 @@ const BackToTopButton = () => {
             className={`absolute right-0 bottom-0 transform uppercase text-sm`}
             style={{ backgroundColor: '#37806B', borderRadius: '0', height: '50px'}}
             onClick={scrollToTop}
+            aria-label="Back To Top"
         >
             <FontAwesomeIcon icon={ faChevronUp } />
         </button>

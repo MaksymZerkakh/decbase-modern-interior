@@ -39,7 +39,7 @@ const Header = () => {
             </ul>
 
             <div className="hidden md:block">
-              <CustomButton><a href="/">Sign Up</a></CustomButton>
+              <CustomButton><a href="/" aria-label="Sign Up">Sign Up</a></CustomButton>
             </div>
           </div>
 

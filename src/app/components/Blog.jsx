@@ -22,7 +22,7 @@ const Blog = () => {
                     />
                     <h3 className="text-3xl pt-10">2020 Interior Design Trends</h3>
                     <p className="pt-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod incididunt ut labore et dolore magna aliqua.</p>
-                    <CustomButton className="mt-5" style={{backgroundColor: '#37806B'}}>Continue Reading</CustomButton>
+                    <CustomButton className="mt-5" style={{backgroundColor: '#37806B'}} aria-label="Continue Reading">Continue Reading</CustomButton>
                 </div>
 
                 <div>
@@ -36,7 +36,7 @@ const Blog = () => {
                     />
                     <h3 className="text-3xl pt-10">28 Notable Product at ARC Interior Design</h3>
                     <p className="pt-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod incididunt ut labore et dolore magna aliqua.</p>
-                    <CustomButton className="mt-5" style={{backgroundColor: '#37806B'}}>Continue Reading</CustomButton>
+                    <CustomButton className="mt-5" style={{backgroundColor: '#37806B'}} aria-label="Continue Reading">Continue Reading</CustomButton>
                 </div>
             </RowContainer>
         </WrapperContainer>

@@ -8,6 +8,7 @@ const Form = () => (
             type=""
             isFormButton={true}
             className="rounded-tl-2xl lg:rounded-tl-none rounded-br-2xl w-full lg:w-auto"
+            aria-label="Subscribe"
         >
             Subscribe
         </CustomButton>
