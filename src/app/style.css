@@ -573,8 +573,7 @@ input[type="submit"]:focus-visible {
 	position: fixed;
 	opacity: 0;
 	pointer-events: none;
-	mix-blend-mode: exclusion;
-	/* Updated blend mode */
+	mix-blend-mode: difference;
 	width: 50px;
 	height: 50px;
 	border-radius: 50%;
@@ -604,7 +603,6 @@ input[type="datetime"],
 input[type="datetime-local"],
 input[type="color"],
 textarea {
-	border-radius: 15px 0px 0px 0px;
 	background: #EEE;
 	padding: 5px 20px;
 	border: none;

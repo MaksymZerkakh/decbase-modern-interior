@@ -13,6 +13,7 @@ import RowContainer from "./RowContainer";
 import Blog from "./Blog";
 import BackToTopButton from "./BackToTopButton";
 import CustomCursor from "./CustomCursor";
+import Form from "./Form";
 
 export { 
     Header, 
@@ -29,5 +30,6 @@ export {
     RowContainer,
     Blog, 
     BackToTopButton,
-    CustomCursor 
+    CustomCursor,
+    Form 
 };
