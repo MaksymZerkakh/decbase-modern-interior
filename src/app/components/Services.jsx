@@ -46,7 +46,7 @@ const Services = () => {
     };
 
     return (
-        <section className="pt-10 pb-20">
+        <section className="pt-10 pb-20 bg-white">
             <WrapperContainer>
             <div className="pb-5">
                 <div className="text-sm uppercase">What We Do</div>

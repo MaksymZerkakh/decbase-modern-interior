@@ -12,6 +12,7 @@ import WrapperContainer from "./WrapperContainer";
 import RowContainer from "./RowContainer";
 import Blog from "./Blog";
 import BackToTopButton from "./BackToTopButton";
+import CustomCursor from "./CustomCursor";
 
 export { 
     Header, 
@@ -27,5 +28,6 @@ export {
     WrapperContainer, 
     RowContainer,
     Blog, 
-    BackToTopButton 
+    BackToTopButton,
+    CustomCursor 
 };

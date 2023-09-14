@@ -47,7 +47,7 @@ const Testimonials = () => {
     };
 
   return (
-    <section className="py-20">
+    <section className="py-20 bg-white">
       <WrapperContainer>
         <div className="pb-5">
           <div className="text-sm uppercase text-center pb-3">Testimonials</div>

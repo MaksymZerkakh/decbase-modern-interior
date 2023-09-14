@@ -1,6 +1,6 @@
 import './style.css'
 import { Inter } from 'next/font/google'
-import { Header, Footer } from './components'
+import { Header, Footer, CustomCursor } from './components'
 import 'typeface-oswald';
 
 const inter = Inter({ subsets: ['latin'] })
@@ -21,7 +21,8 @@ export default function RootLayout({ children }) {
         <Header />
         {children}
         <Footer />
-        </body>
+        <CustomCursor />
+      </body>
     </html>
   )
 }
