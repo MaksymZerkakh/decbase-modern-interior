@@ -1,11 +1,10 @@
 import React from 'react';
 
 const CustomButton = ({ onClick, children, className, color, radius, type, style, isFormButton }) => {
-  const buttonColor = color || '#CAA892'; 
-  const secondaryBtnColor = '#37806B';
+  const buttonColor = color || '#37806B'; 
   const buttonRadius = radius || '15px 0 15px 0';
 
-  const buttonStyle = isFormButton ? { backgroundColor: secondaryBtnColor } : { backgroundColor: buttonColor, borderRadius: buttonRadius };
+  const buttonStyle = isFormButton ? { backgroundColor: buttonColor } : { backgroundColor: buttonColor, borderRadius: buttonRadius };
 
   return (
     <button
