@@ -10,7 +10,7 @@ input[type="submit"] {
 	color: $color__white;
 	border: none;
 	font-family: $font__header;
-	
+
 
 	&:hover {
 		border-color: $color__border-button-hover;
@@ -60,7 +60,77 @@ input[type="submit"] {
 	transition: transform 350ms ease;
 	transform: translate(-50%, -50%) scale(.3);
 	z-index: 9999;
-  }
-  .custom-cursor--link {
+}
+
+.custom-cursor--link {
 	transform: translate(-50%, -50%) scale(1);
-  }
+}
+
+
+.slider_nav {
+	position: relative;
+	z-index: 2;
+	display: flex;
+	align-items: center;
+	margin-top: -10px;
+
+	.nav_prev, .nav_next {
+		display: block;
+		width: 41px;
+		height: 19px;
+		margin-left: 10px;
+		cursor: pointer;
+		position: relative;
+		text-indent: 2000em;
+		overflow: hidden;
+		background-color: transparent;
+		&:before,
+		&:after {
+			content: '';
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			background-size: contain;
+			background-repeat: no-repeat;
+			background-position: center;
+			transition: all 0.5s;
+		}
+		&:before {
+			opacity: 1;
+			z-index: 2;
+		}
+		&:after {
+			opacity: 0;
+			z-index: 1;
+		}
+		&:hover {
+			&:before {
+				opacity: 0;
+				z-index: 1;
+			}
+			&:after {
+				opacity: 1;
+				z-index: 2;
+			}
+		}
+	}
+
+	.nav_prev {
+		&:before {
+			background-image: url("/arrow-left-1.png");
+		}
+		&:after {
+			background-image: url("/wp-content/themes/hpiRealEstate/dist/assets/images/general/arrow-left-2.png");
+		}
+	}
+	.nav_next {
+		&:before {
+			background-image: url("/arrow-right-1.png");
+		}
+		&:after {
+			background-image: url("/wp-content/themes/hpiRealEstate/dist/assets/images/general/arrow-right-2.png");
+		}
+	}
+}
