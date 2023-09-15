@@ -4,7 +4,7 @@ import Image from 'next/image'
 
 const Blog = () => {
   return (
-    <section className="py-20 background-color">
+    <section className="py-20 background-color blog_section">
         <WrapperContainer>
             <div className="pb-5">
                 <div className="text-sm uppercase text-center pb-3">Latest News</div>

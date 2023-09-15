@@ -17,6 +17,40 @@ header {
 				justify-content: flex-start;
 				padding-top: 40px;
 			}
+
+			li {
+				text-transform: uppercase;
+				position: relative;
+				a{
+					transition: 0.3s ease-in-out;
+					position: relative;
+
+					&:hover {
+						color: $color__main;
+					}
+	
+					&.active {
+						color: $color__main;
+	
+						&::after {
+							transform: scaleX(1);
+						}
+					}
+	
+					&::after {
+						content: "";
+						position: absolute;
+						bottom: 0;
+						left: 0;
+						display: block;
+						width: 30%;
+						height: 2px;
+						background: $color__main;
+						transform: scaleX(0);
+						transition: transform .5s cubic-bezier(.6,0,0,1);
+					}
+				}
+			}
 		}
 
 		@media screen and (max-width: 769px) {
@@ -69,6 +103,25 @@ header {
 			display: block;	
 		}
 	}
+
+	.social {
+		position: relative;
+    	font-size: 0;
+		max-width: 200px;
+		span {
+			a {
+				&::before {
+					content: attr(icon-content);
+					color: #CAA892;
+					font-size: .875rem;
+					font-weight: 900;
+					letter-spacing: .18px;
+					text-transform: lowercase;
+					transition: color .7s;
+				}
+			}
+		}
+	}
 }
 
 
@@ -92,4 +145,8 @@ footer {
 			}
 		}
 	}
+}
+
+.menu_nav_text {
+	font-size: 12px;
 }

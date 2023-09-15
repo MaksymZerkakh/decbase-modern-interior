@@ -25,8 +25,17 @@ const Hero = () => {
                         />
                     </div>
                 </div> 
+
+                <div className="hero_social">
+                    <span aria-hidden="true">Follow +</span>
+                    <ul className="flex justify-between w-full max-w-xs pt-5 social">
+                        <li><a icon-content="fb" className="" href="/" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+                        <li><a icon-content="li" className="" href="/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+                        <li><a icon-content="tw" className="" href="/" target="_blank" rel="noopener noreferrer">Twitter</a></li>
+                    </ul>
+                </div> 
             </RowContainer>
-        </WrapperContainer> 
+        </WrapperContainer>
     </section>
   )
 }

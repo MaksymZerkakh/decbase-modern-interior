@@ -4,7 +4,7 @@ import { BackToTopButton } from '../components';
 
 const Footer = () => {
   return (
-    <footer className="flex md:justify-around py-10 flex-col md:flex-row items-center justify-center relative">
+    <footer className="flex md:justify-around pt-10 md:py-10 flex-col md:flex-row items-center justify-center relative">
       <div className="w-auto md:items-start flex-col items-center">
         <div className="flex flex-col items-center md:items-start justify-start">
           <a href="/">
@@ -41,7 +41,7 @@ const Footer = () => {
       </div>
 
       <div className="text-center pt-5 md:pt-0 md:marker:text-right">
-        <p><a className="text-xs" href="/" target="_blank" rel="noreferrer">4600 E Washington St<br/>Phoenix, Arizona</a></p>
+        <p><a className="text-xs" href="/" target="_blank" rel="noreferrer">5000 E William Blvd<br/>Phoenix, Arizona</a></p>
         <p className="pt-2"><a className="text-xs font-bold" href="tel:855-255-7585">(855) 255-7585</a></p>
       </div>
 
