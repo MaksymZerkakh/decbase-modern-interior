@@ -160,3 +160,27 @@ p {
 		display: none;
 	}
 }
+
+
+.slider_line {
+	display: block;
+    width: 300px;
+    height: 1px;
+    margin-left: auto;
+    background: #CCCCCC;
+    z-index: 3;
+    position: relative;
+	margin: 17px 0;
+
+	span {
+		display: block;
+		width: 17%;
+		height: 3px;
+		background: $color__main;
+		position: absolute;
+		left: 10%;
+		bottom: 0;
+		transition: all 0.5s;
+	}
+	
+  }

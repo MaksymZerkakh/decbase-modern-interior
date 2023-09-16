@@ -69,38 +69,44 @@ const Services = () => {
                     <h2 className="text-5xl md:text-6xl pt-3 font-light">Our Services</h2>
                 </div>
 
-                <div className="flex justify-end pr-5 slider-con pb-5">
-                    <div className="ml-2 flex mr-5"><span className="text-4xl font-extralight">{(currentSlide + 1).toString().padStart(2, '0')}</span> <span className="text-xl font-extralight">/</span> <span className="text-xl font-extralight">{sliderContent.length.toString().padStart(2, '0')}</span></div>
-                    <div className="slider_nav">
-                        <div className="mr-2" onClick={handlePrevious}>
-                            <button className="nav_prev">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="41" height="16.465" viewBox="0 0 41 16.465">
-                                <g id="Group_58" data-name="Group 58" transform="translate(-145 422.733) rotate(180)">
+                <div className="flex justify-end">
+                    <div className="slider_line">
+                        <span style={{ left: `${currentSlide * (100 / sliderContent.length)}%` }}></span>
+                    </div>
+
+                    <div className="flex justify-end pr-5 slider-con pb-5">
+                        <div className="ml-2 flex mr-5"><span className="text-4xl font-extralight">{(currentSlide + 1).toString().padStart(2, '0')}</span> <span className="text-xl font-extralight">/</span> <span className="text-xl font-extralight">{sliderContent.length.toString().padStart(2, '0')}</span></div>
+                        <div className="slider_nav">
+                            <div className="mr-2" onClick={handlePrevious}>
+                                <button className="nav_prev">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="41" height="16.465" viewBox="0 0 41 16.465">
+                                    <g id="Group_58" data-name="Group 58" transform="translate(-145 422.733) rotate(180)">
+                                        <line id="Line_1" data-name="Line 1" x2="40.5" transform="translate(-186 414.5)" fill="none" stroke="#a7a7a7" strokeWidth="1"/>
+                                        <g id="slider_arrow" transform="translate(-217.5 396.267)">
+                                        <g id="Group_59" data-name="Group 59" transform="translate(63.5 10)">
+                                            <path id="Path_2" data-name="Path 2" d="M72.5,18.233,64.5,10l-1,1.033,7,7.2-7,7.2,1,1.033Z" transform="translate(-63.5 -10)" fill="#a7a7a7"/>
+                                        </g>
+                                        </g>
+                                    </g>
+                                    </svg>
+                                    Previous
+                                </button>
+                            </div>
+                            <div onClick={handleNext}>
+                                <button className="nav_next">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="41" height="16.465" viewBox="0 0 41 16.465">
+                                    <g id="Group_58" data-name="Group 58" transform="translate(186 -406.267)">
                                     <line id="Line_1" data-name="Line 1" x2="40.5" transform="translate(-186 414.5)" fill="none" stroke="#a7a7a7" strokeWidth="1"/>
                                     <g id="slider_arrow" transform="translate(-217.5 396.267)">
-                                    <g id="Group_59" data-name="Group 59" transform="translate(63.5 10)">
+                                        <g id="Group_59" data-name="Group 59" transform="translate(63.5 10)">
                                         <path id="Path_2" data-name="Path 2" d="M72.5,18.233,64.5,10l-1,1.033,7,7.2-7,7.2,1,1.033Z" transform="translate(-63.5 -10)" fill="#a7a7a7"/>
+                                        </g>
                                     </g>
                                     </g>
-                                </g>
-                                </svg>
-                                Previous
-                            </button>
-                        </div>
-                        <div onClick={handleNext}>
-                            <button className="nav_next">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="41" height="16.465" viewBox="0 0 41 16.465">
-                                <g id="Group_58" data-name="Group 58" transform="translate(186 -406.267)">
-                                <line id="Line_1" data-name="Line 1" x2="40.5" transform="translate(-186 414.5)" fill="none" stroke="#a7a7a7" strokeWidth="1"/>
-                                <g id="slider_arrow" transform="translate(-217.5 396.267)">
-                                    <g id="Group_59" data-name="Group 59" transform="translate(63.5 10)">
-                                    <path id="Path_2" data-name="Path 2" d="M72.5,18.233,64.5,10l-1,1.033,7,7.2-7,7.2,1,1.033Z" transform="translate(-63.5 -10)" fill="#a7a7a7"/>
-                                    </g>
-                                </g>
-                                </g>
-                                </svg>
-                                Next
-                            </button>
+                                    </svg>
+                                    Next
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
