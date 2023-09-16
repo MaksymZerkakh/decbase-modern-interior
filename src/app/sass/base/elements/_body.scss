@@ -48,53 +48,13 @@ p {
 		}
 
 		@media screen and (max-width: 768px) {
-			padding-left: 0;
+			padding: 0 2.5rem;
 
 			.slider {
 				width: auto;
 			}
 		}
 	}
-
-
-
-	// .featured_services {
-	// 	position: relative;
-	// 	z-index: 3;
-	// 	width: 100%;
-	// 	max-width: 1240px;
-	// 	margin-left: auto;
-	// 	margin-right: auto;
-	// 	// @include breakpoint(medium) {
-		// 	padding-left: 15vw;
-		// 	margin-top: rem-calc(40);
-		// }
-	// 	// @include breakpoint(xxxlarge) {
-	// 	// 	padding-left: 288px;
-	// 	// }
-
-	// 	.slider {
-	// 		width: 337px;
-	// 	}
-	// 	.slick-list {
-	// 		overflow: visible;
-	// 		.slick-track {
-	// 			display: flex;
-	// 		}
-	// 	}
-		
-	// 	&.slick-initialized {
-	// 		.featured-properties-item {
-	// 			display: block;
-	// 		}
-	// 	}
-	// 	.featured-properties-item {
-	// 		display: none;
-	// 		&:first-child {
-	// 			display: block;
-	// 		}
-	// 	}
-	// }
 }
 
 .experience_section {

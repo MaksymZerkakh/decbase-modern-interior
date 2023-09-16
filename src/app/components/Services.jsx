@@ -14,23 +14,18 @@ const Services = () => {
     const sliderRef = useRef(null);
     const [currentSlide, setCurrentSlide] = useState(0);
 
-
     const handleNext = () => {
         if (currentSlide < sliderContent.length - 1) {
-            setCurrentSlide(currentSlide + 1);
             sliderRef.current.slickNext(); // Slide to the next slide
         } else {
-            setCurrentSlide(0); // Reset the counter to 0
             sliderRef.current.slickGoTo(0); // Go back to the first slide
         }
     };
 
     const handlePrevious = () => {
         if (currentSlide > 0) {
-            setCurrentSlide(currentSlide - 1);
             sliderRef.current.slickPrev(); // Slide to the previous slide
         } else {
-            setCurrentSlide(sliderContent.length - 1); // Set the counter to the last slide index
             sliderRef.current.slickGoTo(sliderContent.length - 1); // Go to the last slide
         }
     };
@@ -111,7 +106,12 @@ const Services = () => {
                 </div>
             </WrapperContainer>
                 
-                <Slider ref={sliderRef} {...settings} className="featured_services">
+                <Slider 
+                ref={sliderRef} 
+                {...settings} 
+                className="featured_services"
+                beforeChange={(oldIndex, newIndex) => setCurrentSlide(newIndex)}
+                >
                     {sliderContent.map((slide, index) => (
                         <div key={index} className="px-1">
                             <div className="slider px-8 py-10">

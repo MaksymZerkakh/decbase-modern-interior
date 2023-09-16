@@ -18,23 +18,19 @@ const Testimonials = () => {
 
     const handleNext = () => {
         if (currentSlide < testimonalSlieder.length - 1) {
-            setCurrentSlide(currentSlide + 1);
-            sliderRef.current.slickNext(); // Slide to the next slide
+          sliderRef.current.slickNext(); // Slide to the next slide
         } else {
-            setCurrentSlide(0); // Reset the counter to 0
-            sliderRef.current.slickGoTo(0); // Go back to the first slide
+          sliderRef.current.slickGoTo(0); // Go back to the first slide
         }
-    };
-
-    const handlePrevious = () => {
+      };
+      
+      const handlePrevious = () => {
         if (currentSlide > 0) {
-            setCurrentSlide(currentSlide - 1);
-            sliderRef.current.slickPrev(); // Slide to the previous slide
+          sliderRef.current.slickPrev(); // Slide to the previous slide
         } else {
-            setCurrentSlide(testimonalSlieder.length - 1); // Set the counter to the last slide index
-            sliderRef.current.slickGoTo(testimonalSlieder.length - 1); // Go to the last slide
+          sliderRef.current.slickGoTo(testimonalSlieder.length - 1); // Go to the last slide
         }
-    };
+      };
 
     const settings = {
         dots: true,
@@ -105,7 +101,11 @@ const Testimonials = () => {
                 </div>
 
 
-                <Slider ref={sliderRef} {...settings}>
+                <Slider 
+                ref={sliderRef} 
+                {...settings}
+                beforeChange={(oldIndex, newIndex) => setCurrentSlide(newIndex)}
+                >
                     {testimonalSlieder.map((slide, index) => (
                         <div key={index} className="px-1">
                             <div className="slider px-8 py-10">

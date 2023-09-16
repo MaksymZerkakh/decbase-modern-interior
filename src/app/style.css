@@ -513,7 +513,7 @@ p {
 
 @media screen and (max-width: 768px) {
 	.services_section .featured_services {
-		padding-left: 0;
+		padding: 0 2.5rem;
 	}
 	.services_section .featured_services .slider {
 		width: auto;
