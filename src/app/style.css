@@ -499,13 +499,25 @@ p {
 	}
 }
 
-.services_section .slider {
+.services_section .featured_services {
+	padding-left: 15vw;
+}
+
+.services_section .featured_services .slider {
 	width: 337px;
 }
 
-.services_section .slick-list {
-	overflow: visible;
-	padding-left: 10vw;
+.services_section .featured_services .slick-track {
+	display: flex;
+}
+
+@media screen and (max-width: 768px) {
+	.services_section .featured_services {
+		padding-left: 0;
+	}
+	.services_section .featured_services .slider {
+		width: auto;
+	}
 }
 
 .experience_section {

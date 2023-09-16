@@ -37,12 +37,13 @@ const Services = () => {
 
 
     const settings = {
-        dots: true,
+        dots: false,
         infinite: false,
         arrows: false,
         speed: 500,
         centerMode: true,
         variableWidth: true,
+        //slidesToShow: 3,
         slidesToScroll: 1,
         centerMode: false,
         responsive: [
@@ -51,6 +52,7 @@ const Services = () => {
                 settings: {
                     slidesToShow: 2,
                     slidesToScroll: 1,
+                    variableWidth: false,
                 },
             },
             {
@@ -58,6 +60,7 @@ const Services = () => {
                 settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1,
+                    variableWidth: false,
                 },
             },
         ],
@@ -106,8 +109,9 @@ const Services = () => {
                         </div>
                     </div>
                 </div>
+            </WrapperContainer>
                 
-                <Slider ref={sliderRef} {...settings}>
+                <Slider ref={sliderRef} {...settings} className="featured_services">
                     {sliderContent.map((slide, index) => (
                         <div key={index} className="px-1">
                             <div className="slider px-8 py-10">
@@ -118,7 +122,6 @@ const Services = () => {
                     ))}
                 </Slider>
 
-            </WrapperContainer>
         </section>
     )
 }
