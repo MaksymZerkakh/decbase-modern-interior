@@ -27,13 +27,22 @@ p {
 		top: 3px;
 		background: url(/square-pattern-blue.png);
 		background-size: 12px;
-		height: 15vw;
+		height: 25vw;
 		width: 100px;
 		left: 0;
 
 		@media screen and (max-width: 1400px) {
 			width: 30px;
 		}
+	}
+
+	.slider {
+		width: 337px;
+	}
+
+	.slick-list {
+		overflow: visible;
+		padding-left: 10vw;
 	}
 }
 
@@ -140,3 +149,4 @@ p {
 		display: none;
 	}
 }
+

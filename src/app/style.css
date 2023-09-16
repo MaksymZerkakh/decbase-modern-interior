@@ -488,7 +488,7 @@ p {
 	top: 3px;
 	background: url(/square-pattern-blue.png);
 	background-size: 12px;
-	height: 15vw;
+	height: 25vw;
 	width: 100px;
 	left: 0;
 }
@@ -497,6 +497,15 @@ p {
 	.services_section:before {
 		width: 30px;
 	}
+}
+
+.services_section .slider {
+	width: 337px;
+}
+
+.services_section .slick-list {
+	overflow: visible;
+	padding-left: 10vw;
 }
 
 .experience_section {

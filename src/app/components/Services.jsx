@@ -6,7 +6,7 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import { sliderContent } from '../constants';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faChevronCircleLeft, faChevronCircleRight } from '@fortawesome/free-solid-svg-icons';
+import { faChevronCircleLeft, faChevronCircleRight, fas } from '@fortawesome/free-solid-svg-icons';
 import { WrapperContainer } from '../components';
 
 
@@ -38,10 +38,13 @@ const Services = () => {
 
     const settings = {
         dots: true,
-        infinite: true,
+        infinite: false,
+        arrows: false,
         speed: 500,
-        slidesToShow: 3,
+        centerMode: true,
+        variableWidth: true,
         slidesToScroll: 1,
+        centerMode: false,
         responsive: [
             {
                 breakpoint: 1024,
@@ -104,8 +107,6 @@ const Services = () => {
                     </div>
                 </div>
                 
-
-
                 <Slider ref={sliderRef} {...settings}>
                     {sliderContent.map((slide, index) => (
                         <div key={index} className="px-1">
