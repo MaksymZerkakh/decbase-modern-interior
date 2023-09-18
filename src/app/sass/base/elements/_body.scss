@@ -40,7 +40,10 @@ p {
 		padding-left: 15vw;
 
 		.slider {
-			width: 337px;
+			width: 400px;
+			@include mq ('tablet-wide') {
+				width: 337px;
+			}
 		}
 
 		.slick-track {
@@ -171,6 +174,7 @@ p {
     z-index: 3;
     position: relative;
 	margin: 17px 0;
+
 
 	span {
 		display: block;
