@@ -13,7 +13,7 @@ const Blog = () => {
             <RowContainer className="pt-10">
                 <div className="pb-10 lg:pt-0 lg:pr-10">
                     <Image
-                        src="/post-one.png"
+                        src="/post-one.webp"
                         alt="Hero Image"
                         className="mx-auto"
                         width={553}
@@ -27,7 +27,7 @@ const Blog = () => {
 
                 <div>
                     <Image
-                        src="/post-one.png"
+                        src="/post-one.webp"
                         alt="Hero Image"
                         className="mx-auto"
                         width={553}
