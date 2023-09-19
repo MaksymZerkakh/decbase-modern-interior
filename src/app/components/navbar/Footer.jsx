@@ -9,7 +9,7 @@ const Footer = () => {
         <div className="flex flex-col items-center md:items-start justify-start">
           <a href="/">
             <Image
-              src="/logo.png"
+              src="/logo.webp"
               alt="Vercel Logo"
               className="dark:invert"
               width={100}
