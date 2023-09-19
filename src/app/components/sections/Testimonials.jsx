@@ -60,25 +60,29 @@ const Testimonials = () => {
                     <div className="text-sm uppercase text-center pb-3">Testimonials</div>
                     <h2 className="text-center text-5xl lg:text-6xl font-light mb-8 z-10 relative">See Whay Our Clients Say About Us</h2>
                 </div>
-
-                <Slider 
-                ref={sliderRef} 
-                {...settings}
-                beforeChange={(oldIndex, newIndex) => setCurrentSlide(newIndex)}
-                >
-                    {sliderData.map((slide, index) => (
-                        <div key={index} className="px-1">
-                            <div className="slider px-8 py-10">
-                                <div className="relative">
-                                    <svg xmlns="http://www.w3.org/2000/svg" className="text-4xl absolute right-0 quote" fill="#CAA892" width="24" height="24" viewBox="0 0 24 24"><path d="M9.983 3v7.391c0 5.704-3.731 9.57-8.983 10.609l-.995-2.151c2.432-.917 3.995-3.638 3.995-5.849h-4v-10h9.983zm14.017 0v7.391c0 5.704-3.748 9.571-9 10.609l-.996-2.151c2.433-.917 3.996-3.638 3.996-5.849h-3.983v-10h9.983z"/></svg>
-                                </div>
-                                <h2 className="pb-3 text-lg font-semibold">{slide.name} <span className="text-sm font-light">/ {slide.position}</span></h2>
-                                <p>{slide.description}</p>
+            </WrapperContainer>
+                
+            <Slider 
+            ref={sliderRef} 
+            {...settings}
+            className="featured_testimonials"
+            beforeChange={(oldIndex, newIndex) => setCurrentSlide(newIndex)}
+            >
+                {sliderData.map((slide, index) => (
+                    <div key={index} className="px-1">
+                        <div className="slider px-8 py-10">
+                            <div className="relative">
+                                <svg xmlns="http://www.w3.org/2000/svg" className="text-4xl absolute right-0 quote" fill="#CAA892" width="24" height="24" viewBox="0 0 24 24"><path d="M9.983 3v7.391c0 5.704-3.731 9.57-8.983 10.609l-.995-2.151c2.432-.917 3.995-3.638 3.995-5.849h-4v-10h9.983zm14.017 0v7.391c0 5.704-3.748 9.571-9 10.609l-.996-2.151c2.433-.917 3.996-3.638 3.996-5.849h-3.983v-10h9.983z"/></svg>
                             </div>
+                            <h2 className="text-2xl font-light">{slide.name}</h2>
+                            <div className="pb-3 text-sm font-light">{slide.position}</div>
+                            <p>{slide.description}</p>
                         </div>
-                    ))}
-                </Slider>
+                    </div>
+                ))}
+            </Slider>
 
+            <WrapperContainer>
                 <div className="flex justify-center m-auto mt-10">
                     <div className="slider_line">
                         <span style={{ left: `${currentSlide * (100 / sliderData.length)}%` }}></span>

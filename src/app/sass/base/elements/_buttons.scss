@@ -105,53 +105,5 @@ input[type="submit"] {
 			}
 			
 		}
-	// 	&:before,
-	// 	&:after {
-	// 		content: '';
-	// 		position: absolute;
-	// 		left: 0;
-	// 		top: 0;
-	// 		width: 100%;
-	// 		height: 100%;
-	// 		background-size: contain;
-	// 		background-repeat: no-repeat;
-	// 		background-position: center;
-	// 		transition: all 0.5s;
-	// 	}
-	// 	&:before {
-	// 		opacity: 1;
-	// 		z-index: 2;
-	// 	}
-	// 	&:after {
-	// 		opacity: 0;
-	// 		z-index: 1;
-	// 	}
-	// 	&:hover {
-	// 		&:before {
-	// 			opacity: 0;
-	// 			z-index: 1;
-	// 		}
-	// 		&:after {
-	// 			opacity: 1;
-	// 			z-index: 2;
-	// 		}
-	// 	}
 	}
-
-	// .nav_prev {
-	// 	&:before {
-	// 		background-image: url("/arrow-left.png");
-	// 	}
-	// 	&:after {
-	// 		background-image: url("/arrow-left-alt.png");
-	// 	}
-	// }
-	// .nav_next {
-	// 	&:before {
-	// 		background-image: url("/arrow-right.png");
-	// 	}
-	// 	&:after {
-	// 		background-image: url("/arrow-right-alt.png");
-	// 	}
-	// }
 }

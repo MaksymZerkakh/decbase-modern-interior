@@ -22,6 +22,7 @@ import Data from "./sections/Data";
 import Testimonials from "./sections/Testimonials";
 import Signup from "./sections/Signup";
 import Blog from "./sections/Blog";
+import Projects from "./sections/Projects";
 
 // Input Components
 import Form from "./input/Form";
@@ -46,4 +47,5 @@ export {
     Form,
     SliderLeftButton,
     SliderRightButton,
+    Projects
 };

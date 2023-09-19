@@ -83,54 +83,48 @@ export const sliderContent = [
         description: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes.",
     },
     {
-        title: "Interior Design",
+        title: "Space Optimization:",
         description: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes.",
     },
     {
-        title: "Architecture",
+        title: "Color Consultation",
         description: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes.",
     },
     {
-        title: "Planning",
+        title: "Renovation and Remodeling",
         description: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes.",
     },
 ];
 
 export const testimonialSlider = [
     {
-        img: "/louis-saville.png",
-        name: "Louis Saville",
-        position: "CEO, ABC Company",
+        name: "Jane Smith",
+        position: "Marketing Manager, XYZ Corporation",
         description: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.",
     },
     {
-        img: "/rekha-varadwaz.png",
-        name: "Rekha Varadwaz",
-        position: "CEO, ABC Company",
+        name: "Michael Johnson",
+        position: "Design Director, ABC Design Studio",
         description: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.",
     },
     {
-        img: "/louis-saville.png",
-        name: "John Doe",
-        position: "CEO, ABC Company",
+        name: "Emily Brown",
+        position: "Project Manager, XYZ Architects",
         description: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.",
     },
     {
-        img: "/rekha-varadwaz.png",
-        name: "John Doe",
-        position: "CEO, ABC Company",
+        name: "Daniel Wilson",
+        position: "Interior Designer, ABC Interiors",
         description: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.",
     },
     {
-        img: "/louis-saville.png",
-        name: "John Doe",
-        position: "CEO, ABC Company",
+        name: "Sophia Anderson",
+        position: "Creative Director, XYZ Creatives",
         description: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.",
     },
     {
-        img: "/rekha-varadwaz.png",
-        name: "John Doe",
-        position: "CEO, ABC Company",
+        name: "David Thompson",
+        position: "CEO, ABC Construction",
         description: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.",
     },
-]
+];

@@ -84,22 +84,23 @@ const Services = () => {
                     </div>
                 </div>
             </WrapperContainer>
-                
+
             <Slider 
-            ref={sliderRef} 
-            {...settings} 
-            className="featured_services"
-            beforeChange={(oldIndex, newIndex) => setCurrentSlide(newIndex)}
-            >
-                {sliderData.map((slide, index) => (
-                    <div key={index} className="px-1">
-                        <div className="slider px-8 py-10">
-                            <h2 className="pb-3 text-lg font-semibold">{slide.title}</h2>
-                            <p>{slide.description}</p>
+                ref={sliderRef} 
+                {...settings} 
+                className="featured_services"
+                beforeChange={(oldIndex, newIndex) => setCurrentSlide(newIndex)}
+                >
+                    {sliderData.map((slide, index) => (
+                        <div key={index} className="px-1">
+                            <div className="slider px-8 py-10">
+                                <h2 className="pb-3 font-light text-2xl">{slide.title}</h2>
+                                <p>{slide.description}</p>
+                            </div>
                         </div>
-                    </div>
-                ))}
-            </Slider>
+                    ))}
+                </Slider>
+            
 
         </section>
     )

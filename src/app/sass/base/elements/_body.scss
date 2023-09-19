@@ -36,18 +36,26 @@ p {
 	}
 
 	.featured_services {
-		padding-left: 15vw;
+		overflow: hidden;
+		@include mq ('tablet-wide') {
+			padding-left: 15vw;
+		}
+
+		.slick-list {
+			overflow: visible; 
+			.slick-track {
+				display: flex;
+			}
+		}
 
 		.slider {
 			width: 400px;
 			@include mq ('tablet-wide') {
-				width: 337px;
+				width: 425px;
 			}
 		}
 
-		.slick-track {
-			display: flex;
-		}
+
 
 		@media screen and (max-width: 768px) {
 			padding: 0 2.5rem;
@@ -92,19 +100,30 @@ p {
 }
 
 
-// .testimonials_section {
-// 	position: relative;
-// 	&:after {
-// 		content: '';
-// 		display: block;
-// 		position: absolute;
-// 		left: 0;
-// 		top: 0;
-// 		width: 100%;
-// 		height: 100%;
-// 		background: url(/quotes.svg) no-repeat 100% 30px;
-// 	}
-// }
+.testimonials_section {
+	.featured_testimonials {
+		overflow: hidden;
+		@include mq ('tablet-wide') {
+			padding: 0 15vw;
+		}
+
+		.slick-list {
+			overflow: visible; 
+			.slick-track {
+				display: flex;
+			}
+		}
+
+
+		@media screen and (max-width: 768px) {
+			padding: 0 2.5rem;
+
+			.slider {
+				width: auto;
+			}
+		}
+	}
+}
 
 .hero_social {
 	display: flex;
