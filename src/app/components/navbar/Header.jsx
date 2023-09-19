@@ -22,7 +22,7 @@ const Header = () => {
         <nav className="w-full flex py-6 justify-between items-center navbar">
           <a href="/">
             <Image
-              src="/logo.webp"
+              src="/logo.png"
               alt="Vercel Logo"
               className="dark:invert"
               width={100}

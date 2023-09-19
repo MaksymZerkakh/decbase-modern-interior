@@ -9,7 +9,7 @@ const About = () => {
             <div className="lg:w-2/4 md:pr-10 mx-auto pb-10 lg:pb-0">
                 <div className="">
                     <Image
-                        src="/about.webp"
+                        src="/about.png"
                         alt="Hero Image"
                         className="responsive"
                         width={751}
