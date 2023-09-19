@@ -18,7 +18,6 @@ const Hero = () => {
                         <Image
                             src="/hero.webp"
                             alt="Hero Image"
-                            layout="responsive"
                             width={751}
                             height={659}
                             priority
