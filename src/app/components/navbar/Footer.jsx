@@ -1,6 +1,6 @@
 import Image from 'next/image'
-import { footerLinks } from '../constants'
-import { BackToTopButton } from '../components';
+import { footerLinks } from '../../constants'
+import { BackToTopButton } from '..';
 
 const Footer = () => {
   return (

@@ -1,21 +1,31 @@
-import Header from "./Header";
-import Footer from "./Footer";
+// Nav Components
+import Header from "./navbar/Header";
+import Footer from "./navbar/Footer";
+
+// Layout Containers
+import WrapperContainer from "./layout/WrapperContainer";
+import RowContainer from "./layout/RowContainer";
+
+// UI Components
 import CustomButton from "./ui/CustomButton";
-import Hero from "./Hero";
-import Services from "./Services";
-import About from "./About";
-import Experience from "./Experience";
-import Data from "./Data";
-import Testimonials from "./Testimonials";
-import Signup from "./Signup";
-import WrapperContainer from "./WrapperContainer";
-import RowContainer from "./RowContainer";
-import Blog from "./Blog";
 import BackToTopButton from "./ui//BackToTopButton";
-import CustomCursor from "./CustomCursor";
-import Form from "./Form";
+import CustomCursor from "./ui/CustomCursor";
 import SliderLeftButton from "./ui/SliderLeftButton";
 import SliderRightButton from "./ui/SliderRightButton";
+
+// Sections Components
+import Hero from "./sections/Hero";
+import Services from "./sections/Services";
+import About from "./sections/About";
+import Experience from "./sections/Experience";
+import Data from "./sections/Data";
+import Testimonials from "./sections/Testimonials";
+import Signup from "./sections/Signup";
+import Blog from "./sections/Blog";
+
+// Input Components
+import Form from "./input/Form";
+
 
 export { 
     Header, 

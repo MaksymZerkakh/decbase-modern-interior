@@ -1,5 +1,5 @@
 import React from 'react'
-import { WrapperContainer, RowContainer, CustomButton } from '../components';
+import { WrapperContainer, RowContainer, CustomButton } from '..';
 import Image from 'next/image'
 
 const Blog = () => {

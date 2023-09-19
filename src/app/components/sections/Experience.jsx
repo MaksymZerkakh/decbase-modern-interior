@@ -1,4 +1,4 @@
-import { CustomButton, RowContainer, WrapperContainer } from "../components"
+import { CustomButton, RowContainer, WrapperContainer } from ".."
 import Image from 'next/image'
 
 const Experience = () => {

@@ -1,4 +1,4 @@
-import { CustomButton, WrapperContainer, RowContainer } from "../components"
+import { CustomButton, WrapperContainer, RowContainer } from ".."
 import Image from 'next/image'
 
 const About = () => {

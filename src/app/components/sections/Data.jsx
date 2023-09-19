@@ -1,6 +1,6 @@
 import React from 'react';
-import { WrapperContainer, RowContainer } from '../components';
-import { expertiseContent } from '../constants';
+import { WrapperContainer, RowContainer } from '..';
+import { expertiseContent } from '../../constants';
 
 const Data = () => {
   return (

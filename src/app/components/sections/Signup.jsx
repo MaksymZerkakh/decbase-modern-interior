@@ -1,5 +1,5 @@
 import React from 'react';
-import { WrapperContainer, RowContainer, Form } from '../components';
+import { WrapperContainer, RowContainer, Form } from '..';
 
 const Signup = () => {
   return (

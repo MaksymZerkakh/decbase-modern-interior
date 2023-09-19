@@ -4,8 +4,8 @@ import React, { useRef, useState } from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import { sliderContent } from '../constants';
-import { WrapperContainer, SliderLeftButton, SliderRightButton } from '../components';
+import { sliderContent } from '../../constants';
+import { WrapperContainer, SliderLeftButton, SliderRightButton } from '..';
 
 
 const Services = () => {

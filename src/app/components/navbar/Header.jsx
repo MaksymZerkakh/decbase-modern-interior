@@ -1,8 +1,8 @@
 "use client"
 import { useEffect, useState } from 'react';
 import Image from 'next/image'
-import { CustomButton, WrapperContainer  } from '../components';
-import { navLinks } from '../constants'
+import { CustomButton, WrapperContainer  } from '..';
+import { navLinks } from '../../constants'
 
 const Header = () => {
   const [isClicked, setIsClicked] = useState(false);
