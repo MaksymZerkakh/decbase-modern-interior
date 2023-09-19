@@ -1,11 +1,8 @@
 "use client"
 import { useEffect, useState } from 'react';
 import Image from 'next/image'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
-import { CustomButton } from '../components';
+import { CustomButton, WrapperContainer  } from '../components';
 import { navLinks } from '../constants'
-import { WrapperContainer } from '../components';
 
 const Header = () => {
   const [isClicked, setIsClicked] = useState(false);

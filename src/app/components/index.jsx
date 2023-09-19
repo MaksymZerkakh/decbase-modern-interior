@@ -1,6 +1,6 @@
 import Header from "./Header";
 import Footer from "./Footer";
-import CustomButton from "./CustomButton";
+import CustomButton from "./ui/CustomButton";
 import Hero from "./Hero";
 import Services from "./Services";
 import About from "./About";
@@ -11,9 +11,11 @@ import Signup from "./Signup";
 import WrapperContainer from "./WrapperContainer";
 import RowContainer from "./RowContainer";
 import Blog from "./Blog";
-import BackToTopButton from "./BackToTopButton";
+import BackToTopButton from "./ui//BackToTopButton";
 import CustomCursor from "./CustomCursor";
 import Form from "./Form";
+import SliderLeftButton from "./ui/SliderLeftButton";
+import SliderRightButton from "./ui/SliderRightButton";
 
 export { 
     Header, 
@@ -31,5 +33,7 @@ export {
     Blog, 
     BackToTopButton,
     CustomCursor,
-    Form 
+    Form,
+    SliderLeftButton,
+    SliderRightButton,
 };

@@ -1,5 +1,5 @@
 import React from 'react';
-import CustomButton from './CustomButton';
+import CustomButton from './ui/CustomButton';
 
 const Form = () => (
     <form className="mx-auto pt-5 lg:flex static">

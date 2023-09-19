@@ -4,17 +4,18 @@ import React, { useRef, useState } from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import { testimonalSlieder } from '../constants';
-import { WrapperContainer } from '../components';
-import Image from 'next/image';
+import { testimonialSlider } from '../constants';
+import { WrapperContainer, SliderLeftButton, SliderRightButton } from '../components';
 
 
 const Testimonials = () => {
+    const sliderData = testimonialSlider;
+
     const sliderRef = useRef(null);
     const [currentSlide, setCurrentSlide] = useState(0);
 
     const handleNext = () => {
-        if (currentSlide < testimonalSlieder.length - 1) {
+        if (currentSlide < sliderData.length - 1) {
             sliderRef.current.slickNext(); // Slide to the next slide
         } else {
             sliderRef.current.slickGoTo(0); // Go back to the first slide
@@ -25,7 +26,7 @@ const Testimonials = () => {
         if (currentSlide > 0) {
             sliderRef.current.slickPrev(); // Slide to the previous slide
         } else {
-            sliderRef.current.slickGoTo(testimonalSlieder.length - 1); // Go to the last slide
+            sliderRef.current.slickGoTo(sliderData.length - 1); // Go to the last slide
         }
     };
 
@@ -65,7 +66,7 @@ const Testimonials = () => {
                 {...settings}
                 beforeChange={(oldIndex, newIndex) => setCurrentSlide(newIndex)}
                 >
-                    {testimonalSlieder.map((slide, index) => (
+                    {sliderData.map((slide, index) => (
                         <div key={index} className="px-1">
                             <div className="slider px-8 py-10">
                                 <div className="relative">
@@ -80,7 +81,7 @@ const Testimonials = () => {
 
                 <div className="flex justify-center m-auto mt-10">
                     <div className="slider_line">
-                        <span style={{ left: `${currentSlide * (100 / testimonalSlieder.length)}%` }}></span>
+                        <span style={{ left: `${currentSlide * (100 / sliderData.length)}%` }}></span>
                     </div>
                 </div>
                 
@@ -88,35 +89,11 @@ const Testimonials = () => {
                 <div className="flex justify-end pr-5 slider-con pb-5 mt-10">
                     <div className="slider_nav w-full justify-between">
                         <div className="mr-2" onClick={handlePrevious}>
-                            <button className="nav_prev">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="41" height="16.465" viewBox="0 0 41 16.465">
-                                    <g id="Group_58" data-name="Group 58" transform="translate(-145 422.733) rotate(180)">
-                                        <line id="Line_1" data-name="Line 1" x2="40.5" transform="translate(-186 414.5)" fill="none" stroke="#a7a7a7" strokeWidth="1" />
-                                        <g id="slider_arrow" transform="translate(-217.5 396.267)">
-                                            <g id="Group_59" data-name="Group 59" transform="translate(63.5 10)">
-                                                <path id="Path_2" data-name="Path 2" d="M72.5,18.233,64.5,10l-1,1.033,7,7.2-7,7.2,1,1.033Z" transform="translate(-63.5 -10)" fill="#a7a7a7" />
-                                            </g>
-                                        </g>
-                                    </g>
-                                </svg>
-                                Previous
-                            </button>
+                            <SliderLeftButton/>
                         </div>
-                        <div className="mx-2 flex"><span className="text-4xl font-extralight">{(currentSlide + 1).toString().padStart(2, '0')}</span> <span className="font-extralight text-xl">/</span> <span className="font-extralight text-xl">{testimonalSlieder.length.toString().padStart(2, '0')}</span></div>
+                        <div className="mx-2 flex"><span className="text-4xl font-extralight">{(currentSlide + 1).toString().padStart(2, '0')}</span> <span className="font-extralight text-xl">/</span> <span className="font-extralight text-xl">{sliderData.length.toString().padStart(2, '0')}</span></div>
                         <div onClick={handleNext}>
-                            <button className="nav_next">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="41" height="16.465" viewBox="0 0 41 16.465">
-                                    <g id="Group_58" data-name="Group 58" transform="translate(186 -406.267)">
-                                        <line id="Line_1" data-name="Line 1" x2="40.5" transform="translate(-186 414.5)" fill="none" stroke="#a7a7a7" strokeWidth="1" />
-                                        <g id="slider_arrow" transform="translate(-217.5 396.267)">
-                                            <g id="Group_59" data-name="Group 59" transform="translate(63.5 10)">
-                                                <path id="Path_2" data-name="Path 2" d="M72.5,18.233,64.5,10l-1,1.033,7,7.2-7,7.2,1,1.033Z" transform="translate(-63.5 -10)" fill="#a7a7a7" />
-                                            </g>
-                                        </g>
-                                    </g>
-                                </svg>
-                                Next
-                            </button>
+                            <SliderRightButton/>
                         </div>
                     </div>
                 </div>
