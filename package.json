@@ -8,7 +8,8 @@
     "start": "next start",
     "lint": "next lint",
     "watch:scss": "node-sass src/app/sass/ -o src/app --source-map true --output-style expanded --indent-type tab --indent-width 1 -w",
-    "compile:css": "node-sass src/app/sass/ -o src/app && stylelint 'src/app/**/*.css' --fix || true && stylelint 'src/app/**/*.css' --fix"
+    "compile:css": "node-sass src/app/sass/ -o src/app && stylelint 'src/app/**/*.css' --fix || true && stylelint 'src/app/**/*.css' --fix",
+    "minify:css": "css-minify --file src/app/style.css -o src/app/ && mv src/app/style.min.css src/app/style.css"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.4.2",
@@ -19,6 +20,7 @@
     "@types/react-dom": "^18.0.6",
     "autoprefixer": "10.4.15",
     "compress-images": "^2.0.5",
+    "css-minify": "^2.0.0",
     "eslint": "8.49.0",
     "eslint-config-next": "13.4.19",
     "gifsicle": "^5.2.1",
