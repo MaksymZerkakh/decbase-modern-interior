@@ -1,6 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="14.707" height="14.707" viewBox="0 0 14.707 14.707">
-  <g id="Group_61" data-name="Group 61" transform="translate(136.348 -462.682)">
-    <line id="Line_5" data-name="Line 5" x2="19.799" transform="translate(-121.994 477.036) rotate(-135)" fill="none" stroke="#404040" strokeWidth="1"/>
-    <line id="Line_6" data-name="Line 6" x2="19.799" transform="translate(-121.994 463.036) rotate(135)" fill="none" stroke="#404040" strokeWidth="1"/>
-  </g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="14.707" height="14.707"><g fill="none" stroke="#404040" data-name="Group 61"><path d="m14.354 14.354-14-14" data-name="Line 5"/><path d="m14.354.354-14 14" data-name="Line 6"/></g></svg>
