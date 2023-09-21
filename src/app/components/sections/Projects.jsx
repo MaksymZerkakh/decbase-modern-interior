@@ -2,6 +2,7 @@
 
 import React, { useRef, useState } from 'react';
 import Slider from 'react-slick';
+import LazyLoad from 'react-lazy-load';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import { projects } from '../../constants';
@@ -93,16 +94,16 @@ const Projects = () => {
                 >
                 {sliderData.map((slide, index) => (
                     <div key={index} className="px-1">
-                        <div className="slider lg:flex">
-                       
-                          <div className="lg:w-2/4 slider_img" style={{ backgroundImage: `url(${slide.image})`, backgroundPosition: 'center', backgroundRepeat: 'no-repeat', backgroundSize: 'cover'  }}/>
-                     
-                          <div className="lg:w-2/4 px-8 py-10">
-                            <h2 className="pb-3 font-light text-2xl">{slide.title}</h2>
-                            <p>{slide.description}</p>
-                            <div className="pt-5"><CustomButton><a href="/">Learn More</a></CustomButton></div>
-                          </div>
-                      </div>
+                        <LazyLoad offset={300}>
+                            <div className="slider lg:flex">
+                                <div className="lg:w-2/4 slider_img" style={{ backgroundImage: `url(${slide.image})`, backgroundPosition: 'center', backgroundRepeat: 'no-repeat', backgroundSize: 'cover'  }}/>
+                                <div className="lg:w-2/4 px-8 py-10">
+                                    <h2 className="pb-3 font-light text-2xl">{slide.title}</h2>
+                                    <p>{slide.description}</p>
+                                    <div className="pt-5"><CustomButton><a href="/">Learn More</a></CustomButton></div>
+                                </div>
+                            </div>
+                        </LazyLoad>
                     </div>
                 ))}
             </Slider>
