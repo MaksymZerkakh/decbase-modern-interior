@@ -33,6 +33,7 @@ const Testimonials = () => {
     const settings = {
         dots: false,
         infinite: true,
+        arrows: false,
         speed: 500,
         slidesToShow: 2,
         slidesToScroll: 1,

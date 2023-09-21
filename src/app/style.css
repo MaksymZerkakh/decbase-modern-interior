@@ -513,6 +513,43 @@ p {
 	}
 }
 
+.services_section .slider_line {
+	display: block;
+	width: 50vw;
+	height: 1px;
+	margin-left: auto;
+	background: #CCCCCC;
+	z-index: 3;
+	position: relative;
+	margin: 17px 0;
+	margin-right: 4vw;
+}
+
+.services_section .slider_line span {
+	display: block;
+	width: 17%;
+	height: 3px;
+	background: #37806B;
+	position: absolute;
+	left: 10%;
+	bottom: 0;
+	transition: all 0.5s;
+}
+
+.services_section .slider_nav {
+	position: relative;
+	z-index: 2;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	padding: 0 15px;
+	width: auto;
+	max-width: 120rem;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 0;
+}
+
 .experience_section {
 	position: relative;
 }
@@ -560,6 +597,12 @@ p {
 	overflow: visible;
 }
 
+@media only screen and (min-width: 1024px) {
+	.testimonials_section .featured_testimonials .slick-list {
+		overflow: hidden;
+	}
+}
+
 .testimonials_section .featured_testimonials .slick-list .slick-track {
 	display: flex;
 }
@@ -571,6 +614,28 @@ p {
 	.testimonials_section .featured_testimonials .slider {
 		width: auto;
 	}
+}
+
+.testimonials_section .slider_line {
+	display: block;
+	width: 300px;
+	height: 1px;
+	margin-left: auto;
+	background: #CCCCCC;
+	z-index: 3;
+	position: relative;
+	margin: 17px 0;
+}
+
+.testimonials_section .slider_line span {
+	display: block;
+	width: 17%;
+	height: 3px;
+	background: #37806B;
+	position: absolute;
+	left: 10%;
+	bottom: 0;
+	transition: all 0.5s;
 }
 
 .hero_social {
@@ -635,28 +700,6 @@ p {
 	.hero_social {
 		display: none;
 	}
-}
-
-.slider_line {
-	display: block;
-	width: 300px;
-	height: 1px;
-	margin-left: auto;
-	background: #CCCCCC;
-	z-index: 3;
-	position: relative;
-	margin: 17px 0;
-}
-
-.slider_line span {
-	display: block;
-	width: 17%;
-	height: 3px;
-	background: #37806B;
-	position: absolute;
-	left: 10%;
-	bottom: 0;
-	transition: all 0.5s;
 }
 
 hr {
@@ -1187,6 +1230,140 @@ footer .social li a::before {
 	border-radius: 60px 0;
 	width: 185px;
 	height: 185px;
+}
+
+/* Slider
+--------------------------------------------- */
+.projects_section {
+	position: relative;
+}
+
+.projects_section:before {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 3px;
+	background: url(/square-pattern-blue.webp);
+	background-size: 12px;
+	height: 25vw;
+	width: 100px;
+	left: 0;
+}
+
+@media screen and (max-width: 1400px) {
+	.projects_section:before {
+		width: 30px;
+	}
+}
+
+.projects_section .featured_services {
+	overflow: hidden;
+	z-index: 3;
+	padding-bottom: 5vw;
+}
+
+@media only screen and (min-width: 1024px) {
+	.projects_section .featured_services {
+		padding-left: 15vw;
+	}
+}
+
+.projects_section .featured_services .slick-list {
+	overflow: visible;
+}
+
+.projects_section .featured_services .slick-list .slick-track {
+	display: flex;
+}
+
+.projects_section .featured_services .slider {
+	width: 400px;
+}
+
+@media only screen and (min-width: 1024px) {
+	.projects_section .featured_services .slider {
+		width: 625px;
+	}
+}
+
+.projects_section .featured_services .slider .slider_img {
+	height: 65vw;
+	border-radius: 60px 0 0 0;
+}
+
+@media only screen and (min-width: 1024px) {
+	.projects_section .featured_services .slider .slider_img {
+		height: inherit;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.projects_section .featured_services {
+		padding: 0 2.5rem;
+	}
+	.projects_section .featured_services .slider {
+		width: auto;
+	}
+}
+
+.projects_section .slider_line_con {
+	position: relative;
+	flex-direction: row;
+	padding: 1.75vw 3vw 1.75vw;
+	width: 100%;
+	margin-right: auto;
+	margin-left: 14vw;
+	padding-right: 10vw;
+	padding-top: 2vw;
+	padding-bottom: 2.2vw;
+}
+
+.projects_section .slider_line_con:before {
+	content: '';
+	display: block;
+	width: 100%;
+	height: 2000em;
+	background: #F8F8F8;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 1;
+}
+
+.projects_section .slider_line_con .slider_line {
+	display: block;
+	width: 100%;
+	height: 1px;
+	margin-left: auto;
+	background: #CCCCCC;
+	z-index: 3;
+	position: relative;
+	margin: 17px 0;
+}
+
+.projects_section .slider_line_con .slider_line span {
+	display: block;
+	width: 17%;
+	height: 3px;
+	background: #37806B;
+	position: absolute;
+	left: 10%;
+	bottom: 0;
+	transition: all 0.5s;
+}
+
+.projects_section .slider_nav {
+	position: relative;
+	z-index: 2;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	padding: 0 15px;
+	width: auto;
+	max-width: 120rem;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 0;
 }
 
 /*--------------------------------------------------------------

@@ -65,6 +65,45 @@ p {
 			}
 		}
 	}
+
+		.slider_line {
+		display: block;
+		width: 50vw;
+		height: 1px;
+		margin-left: auto;
+		background: #CCCCCC;
+		z-index: 3;
+		position: relative;
+		margin: 17px 0;
+		margin-right: 4vw;
+
+
+		span {
+			display: block;
+			width: 17%;
+			height: 3px;
+			background: $color__main;
+			position: absolute;
+			left: 10%;
+			bottom: 0;
+			transition: all 0.5s;
+		}
+		
+	}
+
+	.slider_nav {
+        position: relative;
+        z-index: 2;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 0 15px;
+        width: auto;
+        max-width: 120rem;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0;
+    }
 }
 
 .experience_section {
@@ -108,7 +147,11 @@ p {
 		}
 
 		.slick-list {
-			overflow: visible; 
+			overflow: visible;
+			
+			@include mq ('tablet-wide') {
+				overflow: hidden;
+			}
 			.slick-track {
 				display: flex;
 			}
@@ -123,6 +166,30 @@ p {
 			}
 		}
 	}
+
+	.slider_line {
+		display: block;
+		width: 300px;
+		height: 1px;
+		margin-left: auto;
+		background: #CCCCCC;
+		z-index: 3;
+		position: relative;
+		margin: 17px 0;
+	
+	
+		span {
+			display: block;
+			width: 17%;
+			height: 3px;
+			background: $color__main;
+			position: absolute;
+			left: 10%;
+			bottom: 0;
+			transition: all 0.5s;
+		}
+		
+	  }
 }
 
 .hero_social {
@@ -181,28 +248,3 @@ p {
 		display: none;
 	}
 }
-
-
-.slider_line {
-	display: block;
-    width: 300px;
-    height: 1px;
-    margin-left: auto;
-    background: #CCCCCC;
-    z-index: 3;
-    position: relative;
-	margin: 17px 0;
-
-
-	span {
-		display: block;
-		width: 17%;
-		height: 3px;
-		background: $color__main;
-		position: absolute;
-		left: 10%;
-		bottom: 0;
-		transition: all 0.5s;
-	}
-	
-  }

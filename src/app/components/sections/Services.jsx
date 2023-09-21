@@ -66,12 +66,12 @@ const Services = () => {
                     <h2 className="text-5xl md:text-6xl pt-3 font-light">Our Services</h2>
                 </div>
 
-                <div className="flex justify-end">
+                <div className="flex justify-end p-5">
                     <div className="slider_line">
                         <span style={{ left: `${currentSlide * (100 / sliderData.length)}%` }}></span>
                     </div>
 
-                    <div className="flex justify-end pr-5 slider-con pb-5">
+                    <div className="flex justify-end slider-con">
                         <div className="ml-2 flex mr-5"><span className="text-4xl font-extralight">{(currentSlide + 1).toString().padStart(2, '0')}</span> <span className="text-xl font-extralight">/</span> <span className="text-xl font-extralight">{sliderData.length.toString().padStart(2, '0')}</span></div>
                         <div className="slider_nav">
                             <div className="mr-2" onClick={handlePrevious}>

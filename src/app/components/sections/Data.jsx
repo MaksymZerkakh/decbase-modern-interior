@@ -9,8 +9,8 @@ const Data = () => {
         <h2 className="text-center text-4xl font-light">3000+ Completed Work Which We have Successfully Done</h2>
         <RowContainer className="md:justify-around py-10 flex-col md:flex-row items-center justify-center">
           {expertiseContent.map((blurb, index) => (
-            <>
-              <div key={index} className={`${index % 2 === 1 ? 'lg:pt-20' : ''}`}>
+            <React.Fragment key={index}>
+              <div className={`${index % 2 === 1 ? 'lg:pt-20' : ''}`}>
                 <div className="data-cards flex flex-col items-center justify-center my-5 z-20 relative">
                   <p className="text-4xl font-bold">{blurb.number}</p>
                   <h2 className="pb-3 text-sm">{blurb.title}</h2>
@@ -42,7 +42,7 @@ const Data = () => {
                   <path d="M0 1H96.5V97H218" stroke="#E0E0E0" strokeWidth="2" />
                 </svg>
               )}
-            </>
+            </React.Fragment>
           ))}
         </RowContainer>
       </WrapperContainer>
