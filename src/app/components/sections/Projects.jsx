@@ -4,7 +4,7 @@ import React, { useRef, useState } from 'react';
 import Slider from 'react-slick';
 import LazyLoad from 'react-lazy-load';
 import { projects } from '../../constants';
-import { WrapperContainer, SliderLeftButton, SliderRightButton, CustomButton, StylesheetLoader } from '..';
+import { WrapperContainer, SliderLeftButton, SliderRightButton, CustomButton } from '..';
 
 
 const Projects = () => {
@@ -83,8 +83,6 @@ const Projects = () => {
                         </div>
                     </div>
                 </WrapperContainer>
-
-                <StylesheetLoader />
 
                 <Slider
                     ref={sliderRef}

@@ -3,7 +3,7 @@
 import React, { useRef, useState } from 'react';
 import Slider from 'react-slick';
 import { testimonialSlider } from '../../constants';
-import { WrapperContainer, SliderLeftButton, SliderRightButton, StylesheetLoader } from '..';
+import { WrapperContainer, SliderLeftButton, SliderRightButton } from '..';
 
 
 const Testimonials = () => {
@@ -60,8 +60,6 @@ const Testimonials = () => {
                     <h2 className="text-center text-5xl lg:text-6xl font-light mb-8 z-10 relative">See Whay Our Clients Say About Us</h2>
                 </div>
             </WrapperContainer>
-
-            <StylesheetLoader />
                 
             <Slider 
             ref={sliderRef} 
