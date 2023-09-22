@@ -2,10 +2,8 @@
 
 import React, { useRef, useState } from 'react';
 import Slider from 'react-slick';
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
 import { sliderContent } from '../../constants';
-import { WrapperContainer, SliderLeftButton, SliderRightButton } from '..';
+import { WrapperContainer, SliderLeftButton, SliderRightButton, StylesheetLoader } from '..';
 
 
 const Services = () => {
@@ -85,6 +83,8 @@ const Services = () => {
                 </div>
             </WrapperContainer>
 
+            <StylesheetLoader />
+
             <Slider 
                 ref={sliderRef} 
                 {...settings} 
@@ -99,7 +99,7 @@ const Services = () => {
                             </div>
                         </div>
                     ))}
-                </Slider>
+            </Slider>
             
 
         </section>

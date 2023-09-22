@@ -1,4 +1,7 @@
+"use client";
+
 import { CustomButton, WrapperContainer, RowContainer } from ".."
+import LazyLoad from 'react-lazy-load';
 import Image from 'next/image'
 
 const About = () => {
@@ -8,6 +11,7 @@ const About = () => {
             <RowContainer>
             <div className="lg:w-2/4 md:pr-10 mx-auto pb-10 lg:pb-0">
                 <div className="">
+                <LazyLoad offset={300}>
                     <Image
                         src="/about.webp"
                         alt="Hero Image"
@@ -16,6 +20,7 @@ const About = () => {
                         height={659}
                         priority
                     />
+                </LazyLoad>
                 </div>
             </div>
 

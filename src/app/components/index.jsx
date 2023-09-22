@@ -27,6 +27,8 @@ import Projects from "./sections/Projects";
 // Input Components
 import Form from "./input/Form";
 
+import StylesheetLoader from "./stylesheetloader/StylesheetLoader";
+
 
 export { 
     Header, 
@@ -47,5 +49,6 @@ export {
     Form,
     SliderLeftButton,
     SliderRightButton,
-    Projects
+    Projects,
+    StylesheetLoader
 };

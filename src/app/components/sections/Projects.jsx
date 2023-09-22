@@ -3,10 +3,8 @@
 import React, { useRef, useState } from 'react';
 import Slider from 'react-slick';
 import LazyLoad from 'react-lazy-load';
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
 import { projects } from '../../constants';
-import { WrapperContainer, SliderLeftButton, SliderRightButton, CustomButton } from '..';
+import { WrapperContainer, SliderLeftButton, SliderRightButton, CustomButton, StylesheetLoader } from '..';
 
 
 const Projects = () => {
@@ -61,54 +59,56 @@ const Projects = () => {
 
     return (
         <section className="pt-10 pb-20 bg-white projects_section">
-          <div className="relative overflow-hidden">
-          <WrapperContainer>
-              <div className="pb-5">
-                  <div className="text-sm uppercase">Featured Work</div>
-                  <h2 className="text-5xl md:text-6xl font-light pb-3">Our Projects</h2>
-              </div>
+            <div className="relative overflow-hidden">
+                <WrapperContainer>
+                    <div className="pb-5">
+                        <div className="text-sm uppercase">Featured Work</div>
+                        <h2 className="text-5xl md:text-6xl font-light pb-3">Our Projects</h2>
+                    </div>
 
-              <div className="flex justify-end slider_line_con">
-                  <div className="slider_line">
-                      <span style={{ left: `${currentSlide * (100 / sliderData.length)}%` }}></span>
-                  </div>
+                    <div className="flex justify-end slider_line_con">
+                        <div className="slider_line">
+                            <span style={{ left: `${currentSlide * (100 / sliderData.length)}%` }}></span>
+                        </div>
 
-                  <div className="flex justify-end slider-con">
-                      <div className="slider_nav">
-                          <div className="mr-2" onClick={handlePrevious}>
-                              <SliderLeftButton/>
-                          </div>
-                          <div onClick={handleNext}>
-                              <SliderRightButton/>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          </WrapperContainer>
-
-            <Slider 
-                ref={sliderRef} 
-                {...settings} 
-                className="featured_services"
-                beforeChange={(oldIndex, newIndex) => setCurrentSlide(newIndex)}
-                >
-                {sliderData.map((slide, index) => (
-                    <div key={index} className="px-1">
-                        <LazyLoad offset={300}>
-                            <div className="slider lg:flex">
-                                <div className="lg:w-2/4 slider_img" style={{ backgroundImage: `url(${slide.image})`, backgroundPosition: 'center', backgroundRepeat: 'no-repeat', backgroundSize: 'cover'  }}/>
-                                <div className="lg:w-2/4 px-8 py-10">
-                                    <h2 className="pb-3 font-light text-2xl">{slide.title}</h2>
-                                    <p>{slide.description}</p>
-                                    <div className="pt-5"><CustomButton><a href="/">Learn More</a></CustomButton></div>
+                        <div className="flex justify-end slider-con">
+                            <div className="slider_nav">
+                                <div className="mr-2" onClick={handlePrevious}>
+                                    <SliderLeftButton />
+                                </div>
+                                <div onClick={handleNext}>
+                                    <SliderRightButton />
                                 </div>
                             </div>
-                        </LazyLoad>
+                        </div>
                     </div>
-                ))}
-            </Slider>
+                </WrapperContainer>
 
-          </div>
+                <StylesheetLoader />
+
+                <Slider
+                    ref={sliderRef}
+                    {...settings}
+                    className="featured_services"
+                    beforeChange={(oldIndex, newIndex) => setCurrentSlide(newIndex)}
+                >
+                    {sliderData.map((slide, index) => (
+                        <div key={index} className="px-1">
+                            <LazyLoad offset={300}>
+                                <div className="slider lg:flex">
+                                    <div className="lg:w-2/4 slider_img" style={{ backgroundImage: `url(${slide.image})`, backgroundPosition: 'center', backgroundRepeat: 'no-repeat', backgroundSize: 'cover' }} />
+                                    <div className="lg:w-2/4 px-8 py-10">
+                                        <h2 className="pb-3 font-light text-2xl">{slide.title}</h2>
+                                        <p>{slide.description}</p>
+                                        <div className="pt-5"><CustomButton><a href="/">Learn More</a></CustomButton></div>
+                                    </div>
+                                </div>
+                            </LazyLoad>
+                        </div>
+                    ))}
+                </Slider>
+
+            </div>
         </section>
     )
 }

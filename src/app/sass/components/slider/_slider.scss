@@ -22,6 +22,12 @@
         z-index: 3;
         padding-bottom: 5vw;
 
+        position: relative;
+        display: block;
+        box-sizing: border-box;
+        user-select: none;
+        touch-action: pan-y;
+
         @include mq ('tablet-wide') {
             padding-left: 15vw;
         }
