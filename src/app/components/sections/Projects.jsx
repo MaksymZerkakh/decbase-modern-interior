@@ -98,8 +98,7 @@ const Projects = () => {
                                     <div className="lg:w-2/4 px-8 py-10">
                                         <h2 className="pb-3 font-light text-2xl">{slide.title}</h2>
                                         <div className="py-3 pb-3 text-sm">
-                                            <div>{slide.location}</div>
-                                            <div>{slide.category}</div>
+                                            <div>Location: {slide.location}</div>
                                         </div>
 
                                         <div className="available-space">
@@ -108,12 +107,9 @@ const Projects = () => {
                                         </div>
                         
                                         <div className="py-3">
-                                            <div>{slide.designConcept}</div>
-                                            <div className="text-xs py-2">{slide.keyDesignElements.map((element, index) => (
-                                                <span key={index}>
-                                                    {element}{index !== slide.keyDesignElements.length - 1 ? ', ' : ''}
-                                                </span>
-                                            ))}</div>
+                                            <div>Type: {slide.designConcept}</div>
+                                            <div className="text-xs pt-2 italic">General Contractor: {slide.generalContractor}</div>
+                                            <div className="text-xs py-2 italic">MERP Engineering: {slide.engineering}</div>
                                         </div>
                                         <div className="pt-5"><CustomButton><a href="/">Learn More</a></CustomButton></div>
                                     </div>
