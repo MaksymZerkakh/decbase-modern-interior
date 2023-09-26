@@ -53,7 +53,7 @@ const Testimonials = () => {
     };
 
     return (
-        <section className="py-20 bg-white testimonials_section">
+        <section id="testimonials" className="py-20 bg-white testimonials_section">
             <WrapperContainer>
                 <div className="pb-5">
                     <div className="text-sm uppercase text-center pb-3">Testimonials</div>

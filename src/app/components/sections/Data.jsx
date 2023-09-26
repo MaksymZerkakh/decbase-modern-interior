@@ -4,7 +4,7 @@ import { expertiseContent } from '../../constants';
 
 const Data = () => {
   return (
-    <section className="py-20 background-color">
+    <section id="data" className="py-20 background-color">
       <WrapperContainer>
         <h2 className="text-center text-4xl font-light">3000+ Completed Work Which We have Successfully Done</h2>
         <RowContainer className="md:justify-around py-10 flex-col md:flex-row items-center justify-center">

@@ -58,7 +58,7 @@ const Projects = () => {
     };
 
     return (
-        <section className="pt-10 pb-20 bg-white projects_section">
+        <section id="projects" className="pt-10 pb-20 bg-white projects_section">
             <div className="relative overflow-hidden">
                 <WrapperContainer>
                     <div className="pb-5">
@@ -97,7 +97,24 @@ const Projects = () => {
                                     <div className="lg:w-2/4 slider_img" style={{ backgroundImage: `url(${slide.image})`, backgroundPosition: 'center', backgroundRepeat: 'no-repeat', backgroundSize: 'cover' }} />
                                     <div className="lg:w-2/4 px-8 py-10">
                                         <h2 className="pb-3 font-light text-2xl">{slide.title}</h2>
-                                        <p>{slide.description}</p>
+                                        <div className="py-3 pb-3 text-sm">
+                                            <div>{slide.location}</div>
+                                            <div>{slide.category}</div>
+                                        </div>
+
+                                        <div className="available-space">
+                                            <div className="text-2xl font-semibold">{slide.size}</div>
+                                            <div className="text-xs uppercase">Available SF</div>
+                                        </div>
+                        
+                                        <div className="py-3">
+                                            <div>{slide.designConcept}</div>
+                                            <div className="text-xs py-2">{slide.keyDesignElements.map((element, index) => (
+                                                <span key={index}>
+                                                    {element}{index !== slide.keyDesignElements.length - 1 ? ', ' : ''}
+                                                </span>
+                                            ))}</div>
+                                        </div>
                                         <div className="pt-5"><CustomButton><a href="/">Learn More</a></CustomButton></div>
                                     </div>
                                 </div>

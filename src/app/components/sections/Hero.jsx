@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 const Hero = () => {
   return (
-    <section className="py-10 bg-white">
+    <section id="home" className="py-10 bg-white">
         <WrapperContainer>
             <RowContainer>
                 <div className="lg:w-2/4 order-2 lg:order-1 lg:pr-10 lg:pt-10">
