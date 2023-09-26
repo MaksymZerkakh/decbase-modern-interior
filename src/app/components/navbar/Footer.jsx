@@ -17,7 +17,7 @@ const Footer = () => {
               priority
             />
           </a>
-          <span className="text-xs uppercase">Modern Interior</span>
+          <span className="text-xs uppercase py-2">Modern Interior Design</span>
         </div>
         <ul className="flex justify-between w-full max-w-xs pt-5 social">
           <li><a icon-content="fb" className="" href="/" target="_blank" rel="noopener noreferrer">Facebook</a></li>
@@ -36,7 +36,7 @@ const Footer = () => {
             ))}
           </ul>
         </nav>
-        <p className="text-xs pt-5">@2023 Deckbase. All rights reserved.</p>
+        <p className="text-xs pt-5">@2023 LogoIpsum. All rights reserved.</p>
         <a className="text-xs font-semibold" href="/">Terms & Conditions</a>
       </div>
 

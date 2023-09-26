@@ -21,7 +21,7 @@ const Experience = () => {
                     />
                 </LazyLoad>
                 <h2 className="text-5xl md:text-6xl pt-3 pb-10 font-light">Years Of Successfuly Working The Market</h2>
-                <div className="pt-5"><CustomButton style={{backgroundColor: '#37806B'}} aria-label="Contact">Contact Us</CustomButton></div>
+                <div className="pt-5"><CustomButton aria-label="Contact">Contact Us</CustomButton></div>
             </div>
 
             <div className="lg:w-2/4 order-1 lg:order-2 pb-10 lg:pb-0 mx-auto">
