@@ -23,6 +23,7 @@ import Testimonials from "./sections/Testimonials";
 import Signup from "./sections/Signup";
 import Blog from "./sections/Blog";
 import Projects from "./sections/Projects";
+import Partners from "./sections/Partners";
 
 // Input Components
 import Form from "./input/Form";
@@ -48,4 +49,5 @@ export {
     SliderLeftButton,
     SliderRightButton,
     Projects,
+    Partners
 };

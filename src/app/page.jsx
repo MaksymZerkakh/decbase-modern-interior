@@ -1,4 +1,4 @@
-import { Hero, Services, About, Experience, Data, Testimonials, Signup, Projects } from './components'
+import { Hero, Services, About, Experience, Data, Testimonials, Signup, Projects, Partners } from './components'
 
 export default function Home() {
   return (

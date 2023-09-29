@@ -71,32 +71,38 @@ export const expertiseContent = [
 export const sliderContent = [
     {
         id: 1,
-        title: "Interior Design",
-        description: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes.",
-    },
-    {
-        id: 2,
+        image: "/architectural-design-dark.webp",
         title: "Architecture",
         description: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes.",
     },
     {
+        id: 2,
+        image: "/interior-design-dark.webp",
+        title: "Interior Design",
+        description: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes.",
+    },
+    {
         id: 3,
+        image: "/educational-planning-programming-dark.webp",
         title: "Planning",
         description: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes.",
     },
     {
         id: 4,
-        title: "Space Optimization",
+        image: "/graphic-design-dark.webp",
+        title: "Graphic Design",
         description: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes.",
     },
     {
         id: 5,
-        title: "Color Consultation",
+        image: "/construction-cost-estimating-dark.webp",
+        title: "Construction Cost Estimating",
         description: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes.",
     },
     {
         id: 6,
-        title: "Renovation and Remodeling",
+        image: "/utilization-of-design-technology-dark.webp",
+        title: "Utilization of Design Technology",
         description: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes.",
     },
 ];
@@ -145,7 +151,7 @@ export const projects = [
         id: 1,
         title: "Oak Park East",
         location: "Austin, TX",
-        image: "/interior-design-one.webp",
+        image: "/projects_hero.webp",
         client: "Client One",
         designConcept: "Commercial Intrior",
         generalContractor: "Forge Architecture Commercial Construction",
@@ -156,7 +162,7 @@ export const projects = [
         id: 2,
         title: "San Clemente",
         location: "Austin, TX",
-        image: "/interior-design-four.webp",
+        image: "/projects_hero.webp",
         client: "Client One",
         designConcept: "Commercial Intrior",
         generalContractor: "Forge Architecture Commercial Construction",
@@ -167,7 +173,7 @@ export const projects = [
         id: 3,
         title: "Park Center",
         location: "Austin, TX",
-        image: "/interior-design-three.webp",
+        image: "/projects_hero.webp",
         client: "Client One",
         designConcept: "Commercial Intrior",
         generalContractor: "Forge Architecture Commercial Construction", 
@@ -178,7 +184,7 @@ export const projects = [
         id: 4,
         title: "Douglas Blvd",
         location: "Austin, TX",
-        image: "/interior-design-two.webp",
+        image: "/projects_hero.webp",
         client: "Client One",
         designConcept: "Commercial Intrior",
         generalContractor: "Forge Architecture Commercial Construction", 
@@ -189,7 +195,7 @@ export const projects = [
         id: 5,
         title: "Cedar Valley",
         location: "Austin, TX",
-        image: "/interior-design-five.webp",
+        image: "/projects_hero.webp",
         client: "Client One",
         designConcept: "Commercial Intrior",
         generalContractor: "Forge Architecture Commercial Construction", 
@@ -200,11 +206,38 @@ export const projects = [
         id: 6,
         title: "El Camino Real",
         location: "Austin, TX",
-        image: "/interior-design-six.webp",
+        image: "/projects_hero.webp",
         client: "Client One",
         designConcept: "Commercial Intrior",
         generalContractor: "Forge Architecture Commercial Construction", 
         engineering: "SFP Group", 
         size: "1,233 - 2,345",
+    },
+];
+
+export const partnersSlider = [
+    {
+        id: 1,
+        image: "/greystar.webp",
+    },
+    {
+        id: 2,
+        image: "/greystar.webp",
+    },
+    {
+        id: 3,
+        image: "/greystar.webp",
+    },
+    {
+        id: 4,
+        image: "/greystar.webp",
+    },
+    {
+        id: 5,
+        image: "/greystar.webp",
+    },
+    {
+        id: 6,
+        image: "/greystar.webp",
     },
 ];

@@ -6,7 +6,7 @@ import Image from 'next/image'
 
 const About = () => {
   return (
-    <section id="about" className="py-10 bg-white">
+    <section id="about" className="pb-10 pt-20 bg-white">
         <WrapperContainer>
             <RowContainer>
             <div className="lg:w-2/4 md:pr-10 mx-auto pb-10 lg:pb-0">
