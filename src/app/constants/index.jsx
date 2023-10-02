@@ -218,26 +218,26 @@ export const projects = [
 export const partnersSlider = [
     {
         id: 1,
-        image: "/greystar.webp",
+        image: "/1st-source-bank-logo.svg",
     },
     {
         id: 2,
-        image: "/greystar.webp",
+        image: "/acura-logo.svg",
     },
     {
         id: 3,
-        image: "/greystar.webp",
+        image: "/airbnb_logo.svg",
     },
     {
         id: 4,
-        image: "/greystar.webp",
+        image: "/caterpillar-logo.svg",
     },
     {
         id: 5,
-        image: "/greystar.webp",
+        image: "/fitbit-logo.svg",
     },
     {
         id: 6,
-        image: "/greystar.webp",
+        image: "/bloomberg-logo.svg",
     },
 ];

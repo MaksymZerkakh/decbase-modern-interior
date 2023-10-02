@@ -3,6 +3,7 @@
 import React, { useRef, useState } from 'react';
 import Slider from 'react-slick';
 import { partnersSlider } from '../../constants';
+import 'slick-carousel/slick/slick-theme.css';
 import { WrapperContainer, SliderLeftButton, SliderRightButton } from '..';
 
 
@@ -32,7 +33,7 @@ const Partners = () => {
     const settings = {
         dots: false,
         infinite: true,
-        arrows: false,
+        arrows: true,
         speed: 500,
         centerMode: false,
         variableWidth: false,
@@ -66,7 +67,7 @@ const Partners = () => {
     };
 
     return (
-        <section id="services" className=" bg-white partners_section">
+        <section id="services" className="partners_section">
             <div className="section_wrapper">
                 <div className="pb-5 text-center mb-14">
                         <div className="text-sm uppercase">Our Relationships</div>
@@ -74,24 +75,22 @@ const Partners = () => {
                     </div>
 
                     <div className="py-10 nav_con">
-                        <div className="flex justify-end slider-con">
-                            <Slider 
-                                ref={sliderRef} 
-                                {...settings} 
-                                className="featured_services"
-                                beforeChange={(oldIndex, newIndex) => setCurrentSlide(newIndex)}
-                                >
-                                    {sliderData.map((slide, index) => (
-                                        <div key={index} className="px-1">
-                                            <div>
-                                                <div className="relationships-items">
-                                                    <img src={slide.image} alt="Image" /></div>
-                                                </div>
+                        <Slider 
+                            ref={sliderRef} 
+                            {...settings} 
+                            className="featured_services"
+                            beforeChange={(oldIndex, newIndex) => setCurrentSlide(newIndex)}
+                            >
+                                {sliderData.map((slide, index) => (
+                                    <div key={index} className="px-1">
+                                        <div className="relationships-items">
+                                            <img src={slide.image} alt="Image" />
                                         </div>
-                                    ))}
-                            </Slider>
-                        </div>
+                                    </div>
+                                ))}
+                        </Slider>
                     </div>
+                    
             </div>
         </section>
     )

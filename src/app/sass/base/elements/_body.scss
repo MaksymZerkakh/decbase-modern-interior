@@ -9,6 +9,10 @@
 	cursor: none!important;
 }
 
+body {
+	background-color: $color__white;
+}
+
 p {
 	color: $color__body;
 }
@@ -286,12 +290,13 @@ p {
 	}
 
 	.featured_services {
-		overflow: hidden;
+		//overflow: hidden;
+		padding: 0 11vw;
 		position: relative;
 		z-index: 3;
 
 		.slick-list {
-			overflow: visible; 
+			overflow: hidden; 
 			.slick-track {
 				display: flex;
 			}
@@ -315,21 +320,30 @@ p {
 		}
 
 		.relationships-items {
-			display: flex;
-			align-items: center;
-			justify-content: center;
+			display: none;
+                height: 80px;
+                width: 100%;
+                align-items: center;
+                justify-content: center;
+
+				&:first-child {
+                    display: flex;
+                }
 
 			img {
 				max-width: 120px;
+                    max-height: 70px;
 				vertical-align: middle;
 				height: auto;
 
 				@include  mq ('desktop') {
 					max-width: 140px;
+                        max-height: 80px;
 				}
 
 				@include  mq ('desktop-wide') {
 					max-width: 180px;
+                    max-height: 100px;
 				}
 			}
 		}
@@ -374,7 +388,86 @@ p {
         margin-top: 0;
     }
 
-	.nav_con {
-		padding: 0 11vw;
+
+	.slick-arrow {
+		display: block;
+		width: 41px;
+		height: 19px;
+		position: absolute;
+		bottom: -100px;
+		text-indent: 2000em;
+		overflow: hidden;
+		cursor: pointer;
+		// @include breakpoint(medium) {
+		// 	bottom: auto;
+		// 	top: 20%;
+		// 	margin-top: -10px;
+		// }
+		// @include breakpoint(large) {
+		// 	top: 10%;
+		// }
+		&:before,
+		&:after {
+			content: '';
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			background-size: contain;
+			background-repeat: no-repeat;
+			background-position: center;
+			transition: all 0.5s;
+		}
+		&:before {
+			opacity: 1;
+			z-index: 2;
+		}
+		&:after {
+			opacity: 0;
+			z-index: 1;
+		}
+		&:hover {
+			&:before {
+				opacity: 0;
+				z-index: 1;
+			}
+			&:after {
+				opacity: 1;
+				z-index: 2;
+			}
+		}
+		&.slick-prev {
+			left: 30px;
+			@include mq('tablet') {
+				left: 5.5vw;
+				margin-left: -20px;
+			}
+			@include mq('tablet-wide') {
+				left: 115px;
+			}
+			&:before {
+				background-image: url("/arrow-left.webp");
+			}
+			&:after {
+				background-image: url("/arrow-left.webp");
+			}
+		}
+		&.slick-next {
+			right: 30px;
+			@include mq('tablet') {
+				right: 5.5vw;
+				margin-right: -20px;
+			}
+			@include mq('tablet-wide') {
+				right: 115px;
+			}
+			&:before {
+				background-image: url("/arrow-right.webp");
+			}
+			&:after {
+				background-image: url("/arrow-right.webp");
+			}
+		}
 	}
 }
