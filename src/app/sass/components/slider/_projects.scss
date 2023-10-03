@@ -1,0 +1,141 @@
+.projects_section {
+    position: relative;
+
+    &:before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 3px;
+        background: url(/square-pattern-blue.webp);
+        background-size: 12px;
+        height: 25vw;
+        width: 100px;
+        left: 0;
+
+        @media screen and (max-width: 1400px) {
+            width: 30px;
+        }
+    }
+
+    .featured_services {
+        overflow: hidden;
+        z-index: 3;
+        padding-bottom: 5vw;
+
+        position: relative;
+        display: block;
+        box-sizing: border-box;
+        user-select: none;
+        touch-action: pan-y;
+
+        @include mq ('tablet-wide') {
+            padding-left: 15vw;
+        }
+
+        .slick-list {
+            overflow: visible;
+
+            .slick-track {
+                display: flex;
+            }
+        }
+
+        .slider {
+            width: 400px;
+
+            @include mq ('tablet-wide') {
+                width: 625px;
+            }
+
+            .slider_img {
+                height: 65vw;
+
+            @include mq ('tablet-wide') {
+                height: inherit;
+            }
+
+                border-radius: 60px 0 0 0;
+            }
+        }
+
+
+        @media screen and (max-width: 768px) {
+            padding: 0 2.5rem;
+
+            .slider {
+                width: auto;
+            }
+        }
+    }
+
+    .slider_line_con {
+        position: relative;
+        flex-direction: row;
+        padding: 1.75vw 3vw 1.75vw;
+        width: 100%;
+        margin-right: auto;
+        margin-left: 14vw;
+        padding-right: 10vw;
+        padding-top: 2vw;
+        padding-bottom: 2.2vw;
+
+        &:before {
+            content: '';
+            display: block;
+            width: 100%;
+            height: 2000em;
+            background: #F8F8F8;
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: 1;
+        }
+
+        .slider_line {
+            display: block;
+            width: 100%;
+            height: 1px;
+            margin-left: auto;
+            background: #CCCCCC;
+            z-index: 3;
+            position: relative;
+            margin: 17px 0;
+
+
+            span {
+                display: block;
+                width: 17%;
+                height: 3px;
+                background: $color__main;
+                position: absolute;
+                left: 10%;
+                bottom: 0;
+                transition: all 0.5s;
+            }
+
+        }
+    }
+
+    .slider_nav {
+        position: relative;
+        z-index: 2;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 0 15px;
+        width: auto;
+        max-width: 120rem;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0;
+    }
+}
+
+
+    .available-space {
+        background: url(/secure-range.svg) no-repeat left center;
+        padding-left: 60px;
+        background-size: 35px;
+    }
+
+    

@@ -58,11 +58,19 @@ const Partners = () => {
             {
                 breakpoint: 768,
                 settings: {
-                    slidesToShow: 1,
+                    slidesToShow: 2,
                     slidesToScroll: 1,
                     variableWidth: false,
                 },
             },
+            // {
+            //     breakpoint: 425,
+            //     settings: {
+            //         slidesToShow: 1,
+            //         slidesToScroll: 1,
+            //         variableWidth: false,
+            //     },
+            // },
         ],
     };
 
@@ -74,11 +82,11 @@ const Partners = () => {
                         <h2 className="text-5xl md:text-6xl pt-3 font-light">Meet Our Partners</h2>
                     </div>
 
-                    <div className="py-10 nav_con">
+                    <div className="pt-10 nav_con">
                         <Slider 
                             ref={sliderRef} 
                             {...settings} 
-                            className="featured_services"
+                            className="featured_services_list"
                             beforeChange={(oldIndex, newIndex) => setCurrentSlide(newIndex)}
                             >
                                 {sliderData.map((slide, index) => (
@@ -89,6 +97,12 @@ const Partners = () => {
                                     </div>
                                 ))}
                         </Slider>
+
+                        <div className="flex justify-center m-auto mt-10">
+                    <div className="slider_line">
+                        <span style={{ left: `${currentSlide * (100 / sliderData.length)}%` }}></span>
+                    </div>
+                </div>
                     </div>
                     
             </div>
