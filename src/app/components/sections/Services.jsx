@@ -91,9 +91,9 @@ const Services = () => {
                 >
                     {sliderData.map((slide, index) => (
                         <div key={index} className="px-1">
-                            <div className="slider flex px-8 py-10">
-                                <div className="w-1/4"><img src={slide.image} alt="Image" style={{ height: '60px' }} /></div>
-                                <div className="w-3/4">
+                            <div className="slider md:flex px-8 py-10">
+                                <div className="md:w-1/4"><img src={slide.image} alt="Image" style={{ height: '60px' }} /></div>
+                                <div className="md:w-3/4">
                                     <h2 className="pb-3 font-light text-2xl">{slide.title}</h2>
                                     <p>{slide.description}</p>
                                 </div>

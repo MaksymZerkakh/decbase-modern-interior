@@ -10,7 +10,17 @@ const Header = () => {
 
   useEffect(() => {
     setCurrentPath(window.location.pathname);
-  }, []);
+
+    if (isClicked) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = '';
+    }
+
+    return () => {
+      document.body.style.overflow = '';
+    };
+  }, [isClicked]);
 
   const handleClick = () => {
     setIsClicked(!isClicked);
@@ -18,6 +28,7 @@ const Header = () => {
 
   return (
     <header className='sticky top-0 z-50'>
+      {isClicked && <div className='mobile-blur'></div>}
       <WrapperContainer>
         <nav className="w-full flex py-6 justify-between items-center navbar">
           <a href="/">
@@ -30,7 +41,7 @@ const Header = () => {
               priority
             />
           </a>
-
+          
           <div id='navbar' className={isClicked ? "navbar active" : "navbar"}>
             <ul>
               {navLinks.map((nav, index) => (
